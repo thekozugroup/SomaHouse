@@ -1,0 +1,131 @@
+{
+  "id": "cut-s41",
+  "family": "cut",
+  "seed": 41,
+  "completed_updates": 150,
+  "selected_update": 150,
+  "validation_cost": 0.14225603640079498,
+  "training_seconds": 6.6230185413733125,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 1.6719999313354492,
+        "energy_kwh": 22.85154151916504,
+        "thermal_degree_hours": 4.977138042449951,
+        "co2_ppm_hours": 71.0499496459961,
+        "light_lux_hours": 349.7299499511719,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 13.12499713897705,
+        "co2_compliant_hours": 21.770822525024414,
+        "light_compliant_hours": 11.409724235534668,
+        "action_movement": 0.9604087471961975,
+        "peak_kw": 1.2979334592819214
+      }
+    },
+    {
+      "update": 50,
+      "training_cost": 0.18662500381469727,
+      "validation": {
+        "cost": 0.16208767890930176,
+        "energy_kwh": 27.59440803527832,
+        "thermal_degree_hours": 0.3576940596103668,
+        "co2_ppm_hours": 178.4081268310547,
+        "light_lux_hours": 3.0263912677764893,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 22.826372146606445,
+        "co2_compliant_hours": 18.777774810791016,
+        "light_compliant_hours": 24.96525764465332,
+        "action_movement": 1.4618240594863892,
+        "peak_kw": 1.6295396089553833
+      },
+      "seconds": 2.210182416252792
+    },
+    {
+      "update": 100,
+      "training_cost": 0.26162540912628174,
+      "validation": {
+        "cost": 0.15333473682403564,
+        "energy_kwh": 27.362829208374023,
+        "thermal_degree_hours": 0.30555781722068787,
+        "co2_ppm_hours": 133.83209228515625,
+        "light_lux_hours": 3.546173095703125,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 22.888872146606445,
+        "co2_compliant_hours": 19.763883590698242,
+        "light_compliant_hours": 24.99997901916504,
+        "action_movement": 1.5314496755599976,
+        "peak_kw": 1.646006464958191
+      },
+      "seconds": 4.396412250585854
+    },
+    {
+      "update": 150,
+      "training_cost": 0.1661759465932846,
+      "validation": {
+        "cost": 0.14225603640079498,
+        "energy_kwh": 27.112098693847656,
+        "thermal_degree_hours": 0.2513367235660553,
+        "co2_ppm_hours": 122.8376235961914,
+        "light_lux_hours": 3.83532452583313,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 23.326372146606445,
+        "co2_compliant_hours": 20.486101150512695,
+        "light_compliant_hours": 24.91664695739746,
+        "action_movement": 1.695535659790039,
+        "peak_kw": 1.6653228998184204
+      },
+      "seconds": 6.622204666025937
+    }
+  ],
+  "sha256": "af8a2d811465e0fa0faaa67c60b17a57715bb43489ac05b88bd00cc46742c77b",
+  "initial_sha256": "b9ba7406ecbedc93950ad76dba87df51057f62e57ddcc1a31420d3b2daa068fc",
+  "stats": {
+    "width": 16,
+    "seed": 41,
+    "topology": "fly",
+    "hub": true,
+    "copies": 1,
+    "source_cells_per_spoke": 16,
+    "spoke_units": 64,
+    "hub_units": 16,
+    "source_unique_ids": 16,
+    "recurrent_edges": 584,
+    "allocated_parameters": 5337,
+    "edge_adjusted_parameters": 4897,
+    "modules": 4,
+    "graph": {
+      "selection": "learned weight salience",
+      "parent_indices": [
+        2,
+        4,
+        8,
+        9,
+        11,
+        14,
+        16,
+        19,
+        20,
+        22,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31
+      ]
+    },
+    "lineage": [
+      {
+        "operation": "cut",
+        "seed": 41,
+        "parent_spoke_units": 128,
+        "child_spoke_units": 64
+      }
+    ]
+  },
+  "gradient_norm_max": 4.118661880493164,
+  "training_windows": 3600,
+  "training_transitions": 86400,
+  "selected_checkpoint": "checkpoints/cut-s41.pt"
+}

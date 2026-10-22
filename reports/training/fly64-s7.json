@@ -1,0 +1,161 @@
+{
+  "id": "fly64-s7",
+  "family": "fly64",
+  "seed": 7,
+  "completed_updates": 300,
+  "selected_update": 300,
+  "validation_cost": 0.12355925887823105,
+  "training_seconds": 16.75603379216045,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 54.32454299926758,
+        "energy_kwh": 4.527365207672119,
+        "thermal_degree_hours": 37.72434616088867,
+        "co2_ppm_hours": 13.737797737121582,
+        "light_lux_hours": 713.9075317382812,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 3.979166269302368,
+        "co2_compliant_hours": 24.381927490234375,
+        "light_compliant_hours": 10.611111640930176,
+        "action_movement": 0.3488757610321045,
+        "peak_kw": 0.26703545451164246
+      }
+    },
+    {
+      "update": 50,
+      "training_cost": 0.3140036165714264,
+      "validation": {
+        "cost": 0.6204878091812134,
+        "energy_kwh": 28.055761337280273,
+        "thermal_degree_hours": 2.2043042182922363,
+        "co2_ppm_hours": 110.20719146728516,
+        "light_lux_hours": 3.7395946979522705,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 16.194440841674805,
+        "co2_compliant_hours": 20.74999237060547,
+        "light_compliant_hours": 25.069421768188477,
+        "action_movement": 0.8442891240119934,
+        "peak_kw": 1.5562256574630737
+      },
+      "seconds": 2.4717071671038866
+    },
+    {
+      "update": 100,
+      "training_cost": 0.28234586119651794,
+      "validation": {
+        "cost": 0.21846221387386322,
+        "energy_kwh": 28.500062942504883,
+        "thermal_degree_hours": 0.650468111038208,
+        "co2_ppm_hours": 128.1483612060547,
+        "light_lux_hours": 5.4028449058532715,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 21.194435119628906,
+        "co2_compliant_hours": 20.506935119628906,
+        "light_compliant_hours": 25.006925582885742,
+        "action_movement": 1.0398426055908203,
+        "peak_kw": 1.6492687463760376
+      },
+      "seconds": 5.5135840848088264
+    },
+    {
+      "update": 150,
+      "training_cost": 0.2097204327583313,
+      "validation": {
+        "cost": 0.15335343778133392,
+        "energy_kwh": 27.978788375854492,
+        "thermal_degree_hours": 0.23588185012340546,
+        "co2_ppm_hours": 159.19923400878906,
+        "light_lux_hours": 9.41313648223877,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 23.631927490234375,
+        "co2_compliant_hours": 19.68054962158203,
+        "light_compliant_hours": 23.909704208374023,
+        "action_movement": 1.5283780097961426,
+        "peak_kw": 1.6703428030014038
+      },
+      "seconds": 8.758664125576615
+    },
+    {
+      "update": 200,
+      "training_cost": 0.19042660295963287,
+      "validation": {
+        "cost": 0.14359627664089203,
+        "energy_kwh": 26.909528732299805,
+        "thermal_degree_hours": 0.2453974038362503,
+        "co2_ppm_hours": 74.8880386352539,
+        "light_lux_hours": 6.218071460723877,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 23.5555362701416,
+        "co2_compliant_hours": 21.916656494140625,
+        "light_compliant_hours": 24.444427490234375,
+        "action_movement": 1.800370693206787,
+        "peak_kw": 1.6764097213745117
+      },
+      "seconds": 11.329953125678003
+    },
+    {
+      "update": 250,
+      "training_cost": 0.12805421650409698,
+      "validation": {
+        "cost": 0.12985847890377045,
+        "energy_kwh": 26.330671310424805,
+        "thermal_degree_hours": 0.18551485240459442,
+        "co2_ppm_hours": 56.326778411865234,
+        "light_lux_hours": 6.578575611114502,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 24.013870239257812,
+        "co2_compliant_hours": 21.638877868652344,
+        "light_compliant_hours": 24.534700393676758,
+        "action_movement": 1.8373533487319946,
+        "peak_kw": 1.7204772233963013
+      },
+      "seconds": 14.112220709212124
+    },
+    {
+      "update": 300,
+      "training_cost": 0.1545686572790146,
+      "validation": {
+        "cost": 0.12355925887823105,
+        "energy_kwh": 25.661916732788086,
+        "thermal_degree_hours": 0.19906441867351532,
+        "co2_ppm_hours": 32.95875549316406,
+        "light_lux_hours": 3.511624336242676,
+        "occupied_zone_hours": 25.444425582885742,
+        "thermal_compliant_hours": 23.86109161376953,
+        "co2_compliant_hours": 23.02776336669922,
+        "light_compliant_hours": 24.847200393676758,
+        "action_movement": 1.9451713562011719,
+        "peak_kw": 1.7314428091049194
+      },
+      "seconds": 16.754584750160575
+    }
+  ],
+  "sha256": "4ff64666951dac28ee4c69b0f70aed446f73be95b953c05b6c7093d48eca545c",
+  "initial_sha256": "e1b50a4dc975b100720b313e29047a1a84da7f6b5b991c9b60856da0205513f5",
+  "stats": {
+    "width": 64,
+    "seed": 7,
+    "topology": "fly",
+    "hub": true,
+    "copies": 1,
+    "source_cells_per_spoke": 64,
+    "spoke_units": 256,
+    "hub_units": 16,
+    "source_unique_ids": 64,
+    "recurrent_edges": 9684,
+    "allocated_parameters": 32025,
+    "edge_adjusted_parameters": 25325,
+    "modules": 4,
+    "graph": {
+      "accepted_swaps": 0,
+      "different_edges": 0
+    },
+    "lineage": []
+  },
+  "gradient_norm_max": 10.118854522705078,
+  "training_windows": 7200,
+  "training_transitions": 172800,
+  "selected_checkpoint": "checkpoints/fly64-s7.pt"
+}
