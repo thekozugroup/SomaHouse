@@ -34,3 +34,14 @@ User authorized a new public GitHub repository named SomaHouse. Publish only aft
 - Full detailed report (~3,400 words), first-person case study, six figures, portable docs/ website entry and complete study bundle generated.
 
 Next gates: final committed-state tests, public repository creation/push, remote CI verification and final clean-tree check. Future research requires new held-out seeds; target constrained control and calibrated building validation.
+
+## Study 2 extension (requested after study 1)
+
+Teacher-guided imitation followed by reward refinement, a tuned conventional
+reference, reward-only and dense controls, three new training seeds and fresh
+final scenarios. Frozen in research/teacher-protocol.md before training. Original
+results remain unchanged. Finish neutral colors and a telemetry-derived preview
+video, then publish the extended evidence. No guaranteed winning conclusion.
+
+Study-1 public repository and exact-state CI passed:
+https://github.com/thekozugroup/SomaHouse/actions/runs/39794524213
