@@ -20,17 +20,17 @@ LABELS = {"duplicate": "Duplicated circuit", "continue": "Base + extra training"
           "fly32": "Base fly32", "fly64": "Larger fly64", "rewired32": "Rewired32", "dense32": "Dense32",
           "nohub32": "No hub", "feedback": "Feedback control", "balance": "Balance control",
           "off": "Equipment off", "untrained32": "Untrained circuit"}
-COLORS = {"duplicate": "#aa5b37", "continue": "#8d9978", "cut": "#bf9a67", "fly32": "#789068",
-          "fly64": "#6c8e99", "rewired32": "#9c929b", "dense32": "#66716a", "nohub32": "#b6a98b",
-          "feedback": "#a59977", "balance": "#385745"}
+COLORS = {"duplicate": "#222222", "continue": "#949494", "cut": "#9e9e9e", "fly32": "#888888",
+          "fly64": "#888888", "rewired32": "#959595", "dense32": "#6e6e6e", "nohub32": "#aaaaaa",
+          "feedback": "#999999", "balance": "#606060"}
 
 
 def setup():
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.spines.top": False,
-                         "axes.spines.right": False, "axes.edgecolor": "#c0c6b7", "text.color": "#2b4033",
-                         "axes.labelcolor": "#52664f", "xtick.color": "#61705a", "ytick.color": "#61705a",
-                         "figure.facecolor": "#f5f3eb", "axes.facecolor": "#f5f3eb", "grid.color": "#dbe0d2",
-                         "savefig.facecolor": "#f5f3eb", "figure.dpi": 130})
+                         "axes.spines.right": False, "axes.edgecolor": "#c4c4c4", "text.color": "#242424",
+                         "axes.labelcolor": "#606060", "xtick.color": "#6b6b6b", "ytick.color": "#6b6b6b",
+                         "figure.facecolor": "#fafafa", "axes.facecolor": "#fafafa", "grid.color": "#dedede",
+                         "savefig.facecolor": "#fafafa", "figure.dpi": 130})
 
 
 def save(fig, name):
@@ -41,11 +41,11 @@ def save(fig, name):
 def figures(selection, result, rows):
     setup()
     fig, ax = plt.subplots(figsize=(10, 4.4))
-    for name in ("fly32", "fly64", "rewired32", "dense32", "nohub32"):
+    for line_index, name in enumerate(("fly32", "fly64", "rewired32", "dense32", "nohub32")):
         runs = [r for r in selection["runs"] if r["family"] == name]
         updates = [x["update"] for x in runs[0]["curve"]]
         values = np.array([[c["validation"]["cost"] for c in r["curve"]] for r in runs])
-        ax.plot(updates, values.mean(0), label=LABELS[name], color=COLORS[name], lw=2)
+        ax.plot(updates, values.mean(0), label=LABELS[name], color=COLORS[name], lw=2, linestyle=("-", "--", ":", "-.", (0, (5, 2, 1, 2)))[line_index], marker=("o", "s", "^", "D", "x")[line_index], markersize=3)
         ax.fill_between(updates, values.min(0), values.max(0), color=COLORS[name], alpha=.1)
     ax.set_yscale("log"); ax.grid(axis="y", alpha=.65)
     ax.set(xlabel="Optimizer updates", ylabel="Validation cost · lower is better",
@@ -66,16 +66,16 @@ def figures(selection, result, rows):
     fig.tight_layout(); save(fig, "comparison.png")
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.4))
-    for name in ("cut", "fly32", "continue", "fly64", "duplicate"):
+    for marker_index, name in enumerate(("cut", "fly32", "continue", "fly64", "duplicate")):
         runs = [r for r in selection["runs"] if r["family"] == name]
         x = runs[0]["stats"]["spoke_units"]
         val = [r["validation_cost"] for r in runs]
         test = [np.mean([float(row["cost"]) for row in rows if row["controller"] == name and row["stress"] == "normal" and int(row["training_seed"]) == r["seed"]]) for r in runs]
         for ax, values in zip(axes, (val, test)):
             offset = {"continue": -4, "fly32": 4, "fly64": -5, "duplicate": 5}.get(name, 0)
-            ax.scatter([x + offset] * 3, values, color=COLORS[name], s=23, alpha=.7)
+            ax.scatter([x + offset] * 3, values, color=COLORS[name], marker=("s", "o", "^", "D", "x")[marker_index], s=23, alpha=.7)
             ax.scatter([x + offset], [np.mean(values)], color=COLORS[name], marker="_", s=250)
-            ax.plot([], [], color=COLORS[name], marker="o", ls="", label=LABELS[name])
+            ax.plot([], [], color=COLORS[name], marker=("s", "o", "^", "D", "x")[marker_index], ls="", label=LABELS[name])
     for ax, title in zip(axes, ("Validation · used for selection", "Held-out test · opened after selection")):
         ax.set(xlabel="Spoke units · hub adds 16", ylabel="Cost", title=title, xticks=[64, 128, 256]); ax.grid(alpha=.4)
     axes[1].legend(frameon=False, fontsize=8)
@@ -85,10 +85,10 @@ def figures(selection, result, rows):
     names = ["balance", "feedback", "duplicate", "continue", "cut"]
     matrix = np.array([[next(r["cost"] for r in result["summaries"] if r["controller"] == n and r["stress"] == s) for s in shifts] for n in names])
     fig, ax = plt.subplots(figsize=(10, 3.6))
-    ax.imshow(np.log10(matrix + .05), cmap="YlOrBr", aspect="auto")
+    ax.imshow(np.log10(matrix + .05), cmap="Greys", aspect="auto")
     for i in range(len(names)):
         for j in range(len(shifts)):
-            ax.text(j, i, f"{matrix[i,j]:.3f}", ha="center", va="center", color="#27352d" if matrix[i,j] < 1.7 else "white")
+            ax.text(j, i, f"{matrix[i,j]:.3f}", ha="center", va="center", color="#313131" if matrix[i,j] < 1.7 else "white")
     ax.set_yticks(range(len(names)), [LABELS[n] for n in names]); ax.set_xticks(range(5), ["Normal", "Severe weather", "+2°C sensor bias", "CO₂ stuck at 650", "45% capacity"], fontsize=9)
     ax.set_title("Failures expose what the reward alone can hide · cost, lower is better", pad=15)
     fig.tight_layout(); save(fig, "robustness.png")
@@ -97,14 +97,14 @@ def figures(selection, result, rows):
     balance = json.loads((REPORTS / "trace-balance.json").read_text())
     t = [r["hour"] for r in primary["trace"]]
     fig, axes = plt.subplots(4, 1, figsize=(11, 9), sharex=True)
-    for zone, color in enumerate(("#ad6240", "#718a62", "#648b95")):
-        axes[0].plot(t, [r["temperature"][zone] for r in primary["trace"]], color=color, label=("Living", "Bedroom", "Office")[zone], lw=1.3)
+    for zone, color in enumerate(("#222222", "#777777", "#a3a3a3")):
+        axes[0].plot(t, [r["temperature"][zone] for r in primary["trace"]], color=color, label=("Living", "Bedroom", "Office")[zone], lw=1.3, ls=("-", "--", ":")[zone])
         axes[0].plot(t, [r["setpoint"][zone] for r in primary["trace"]], color=color, ls="--", lw=.7, alpha=.6)
-        axes[1].plot(t, [r["co2"][zone] for r in primary["trace"]], color=color, lw=1.2)
-        axes[2].plot(t, [r["lux"][zone] for r in primary["trace"]], color=color, lw=1.2)
-    axes[1].axhline(1000, ls="--", color="#9c8156", lw=.8); axes[2].axhline(300, ls="--", color="#9c8156", lw=.8)
+        axes[1].plot(t, [r["co2"][zone] for r in primary["trace"]], color=color, lw=1.2, ls=("-", "--", ":")[zone])
+        axes[2].plot(t, [r["lux"][zone] for r in primary["trace"]], color=color, lw=1.2, ls=("-", "--", ":")[zone])
+    axes[1].axhline(1000, ls="--", color="#848484", lw=.8); axes[2].axhline(300, ls="--", color="#848484", lw=.8)
     axes[3].plot(t, [r["power_kw"] for r in primary["trace"]], color=COLORS["duplicate"], label="Learned")
-    axes[3].plot(t, [r["power_kw"] for r in balance["trace"]], color=COLORS["balance"], label="Balance", alpha=.8)
+    axes[3].plot(t, [r["power_kw"] for r in balance["trace"]], color=COLORS["balance"], label="Balance", ls="--", alpha=.8)
     for ax, label in zip(axes, ("Temperature · °C", "CO₂ · ppm", "Illumination · lux", "Power · kW")):
         ax.set_ylabel(label); ax.grid(alpha=.4)
     axes[0].legend(frameon=False, ncol=3, fontsize=8); axes[3].legend(frameon=False, fontsize=8)
@@ -122,10 +122,10 @@ def figures(selection, result, rows):
             deltas.append((cut / intact - 1) * 100)
         changes.append(deltas)
     fig, ax = plt.subplots(figsize=(9,3.6))
-    ax.bar(range(len(lesions)), np.mean(changes, 1), color="#8b9e78", width=.55)
-    for i, values in enumerate(changes): ax.scatter([i] * 3, values, color="#ac5b36", s=18, zorder=4)
+    ax.bar(range(len(lesions)), np.mean(changes, 1), color="#979797", width=.55)
+    for i, values in enumerate(changes): ax.scatter([i] * 3, values, color="#6a6a6a", s=18, zorder=4)
     ax.set_xticks(range(len(lesions)), ["Hub removed", "Context removed", "Air removed", "Light removed", "Recurrence removed"])
-    ax.axhline(0,color="#849177",lw=.8); ax.set_ylabel("Validation cost increase · %"); ax.set_title("The hub is used; not every spoke is equally important")
+    ax.axhline(0,color="#8c8c8c",lw=.8); ax.set_ylabel("Validation cost increase · %"); ax.set_title("The hub is used; not every spoke is equally important")
     ax.grid(axis="y", alpha=.35); ax.set_axisbelow(True)
     fig.tight_layout(); save(fig, "interventions.png")
 
@@ -143,6 +143,10 @@ def report():
     training_seconds = sum(r["training_seconds"] for r in selection["runs"])
     stats = next(r["stats"] for r in selection["runs"] if r["family"] == primary)
     figures(selection, result, rows)
+    extension_text, extension_html = "", ""
+    if (REPORTS / "teacher/results.json").exists():
+        from .teacher_report import generate
+        extension_text, extension_html = generate()
     table = "| Controller | Cost ↓ | kWh/day ↓ | °C·h/zone/day ↓ | CO₂ ppm·h/zone/day ↓ | Light lux·h/zone/day ↓ | Temp / CO₂ / light compliance |\n|---|---:|---:|---:|---:|---:|---|\n"
     for name in ("balance", "feedback", "duplicate", "continue", "cut", "fly64", "fly32", "dense32", "rewired32", "nohub32", "untrained32", "off"):
         r = normal[name]
@@ -294,6 +298,8 @@ The study explores explicit training and structural operations, not open-ended s
 
 EnergyPlus and BOPTEST inform the physical balance and separate-metric methodology; this custom simulator has not been validated against either framework. Code is MIT; source/derived connectome data and trained checkpoints retain CC BY 4.0 attribution. Font licenses are bundled.
 """
+    if extension_text:
+        text += "\n\n---\n\n" + extension_text.replace("](comparison.png)", "](teacher/comparison.png)").replace("](learning.png)", "](teacher/learning.png)")
     (REPORTS / "report.md").write_text(text)
     case = f"""# SomaHouse
 
@@ -332,8 +338,19 @@ This is a simulated control study, not a living brain or a system ready for some
 Project by Michael Wong · 2026. Code MIT; MaleCNS-derived data and trained checkpoints CC BY 4.0. Full methods and limitations: reports/report.md.
 """
     (REPORTS / "case-study.md").write_text(case)
+    if extension_text:
+        teacher_result = json.loads((REPORTS / "teacher/results.json").read_text())
+        teacher_normal = {r["controller"]: r for r in teacher_result["summaries"] if r["stress"] == "normal"}
+        rate = 100 * (1 - teacher_normal[teacher_result["primary"]]["cost"] / teacher_normal["teacher"]["cost"])
+        case += f"\n\n## A second experiment: learn from a teacher\n\nI taught a new circuit to imitate a conventional controller, then trained it further against the reward. I also tuned the conventional reference and reserved 100 new test scenarios. Its cost was {abs(rate):.2f}% {'lower' if rate >= 0 else 'higher'} than that stronger teacher. The registered superiority test {'passed' if teacher_result['outperforms_teacher'] else 'did not pass'}. I kept both conventional references in the report so the comparison stays visible. This is a new experiment; the original result above remains valid. Full methods, checks and physical metrics are in teacher/report.md.\n"
+        (REPORTS / "case-study.md").write_text(case)
+    preview = json.loads((REPORTS / "preview.json").read_text()) if (REPORTS / "preview.json").exists() else None
+    preview_html = ""
+    if preview:
+        preview_html = f'''<section aria-labelledby="preview-title"><h2 id="preview-title">Watch the house and circuit respond</h2><video id="test-preview" controls playsinline preload="metadata" poster="/assets/preview-poster.png" aria-label="Actual saved-model test: house sensors, brain activity and actions"><source src="/assets/preview.mp4" type="video/mp4">Download the test preview below.</video><p class="micro">Actual telemetry from study {preview['study']}, scenario {preview['scenario_seed']}, trained seed {preview['training_seed']}. All 288 decisions replayed against the saved trace. 48 simulated hours in 72 seconds: 2,400× simulation speed. Fixed weights during playback; schematic layout.</p><p class="small"><a href="/assets/preview.mp4" download>Download the test video ↓</a> · <a href="/api/download/report/preview.json">Video provenance ↓</a></p></section>'''
     article = ""
-    for block in case.strip().split("\n\n"):
+    for block in case.split("## A second experiment:")[0].strip().split("\n\n"):
+        block = block.strip()
         escaped = html.escape(block)
         # This controlled copy uses paired emphasis only; no arbitrary HTML is accepted.
         parts = escaped.split("**")
@@ -349,45 +366,61 @@ Project by Michael Wong · 2026. Code MIT; MaleCNS-derived data and trained chec
         r=normal[name]
         summary_table += f"<tr class='{ 'primary-row' if name==primary else ''}'><td>{LABELS[name]}</td><td>{r['cost']:.4f}</td><td>{r['energy_kwh']/2:.2f}</td><td>{r['thermal_compliance']*100:.1f}%</td><td>{r['co2_compliance']*100:.1f}%</td></tr>"
     summary_table += "</tbody></table></div><p class='micro'>Compliance is the mean occupied-time fraction. Targets: ±1°C, CO₂ ≤1,000 ppm. Soft optimization targets; simulated evidence.</p>"
-    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="SomaHouse: I trained a fly-derived modular controller for a simulated house, then tested what duplication, pruning and a central hub changed."><title>SomaHouse — a homeostasis experiment by Michael Wong</title><link rel="stylesheet" href="/assets/style.css"></head><body><header><a class="brand" href="/">SomaHouse</a><nav aria-label="Main"><a href="/">House lab</a><a href="/brain.html">The circuit</a><a href="/case-study.html" aria-current="page">The study ↗</a></nav></header><main class="article"><p class="eyebrow">Michael Wong / independent research / 2026</p><h1>Teaching a circuit to<br>care for a house.</h1><p class="lede">An experiment in modular brains, home regulation and what actually improves when a circuit grows.</p><div class="evidence">24 trained candidates · 3 seeds · 60 normal test scenarios · 4 fault shifts · fully simulated</div>{article}
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="SomaHouse: I trained a fly-derived modular controller for a simulated house, then tested what duplication, pruning and a central hub changed."><title>SomaHouse — a homeostasis experiment by Michael Wong</title><link rel="stylesheet" href="/assets/style.css"></head><body><header><a class="brand" href="/">SomaHouse</a><nav aria-label="Main"><a href="/">House lab</a><a href="/brain.html">The circuit</a><a href="/case-study.html" aria-current="page">The study ↗</a></nav></header><main class="article"><p class="eyebrow">Michael Wong / independent research / 2026</p><h1>Teaching a circuit to<br>care for a house.</h1><p class="lede">An experiment in modular brains, home regulation and what actually improves when a circuit grows.</p><div class="evidence">Study 1: 24 trained candidates · 3 seeds · 60 normal test scenarios · 4 fault shifts · fully simulated</div>{preview_html}{article}
 <figure><img src="/figures/comparison.png" alt="Chart comparing cost, energy and temperature discomfort across learned and conventional controllers"><figcaption>Conventional balance control remains a strong reference. Energy and comfort are shown separately.</figcaption></figure>{summary_table}
 <h2>Did more circuit help?</h2><figure><img src="/figures/capacity.png" alt="Validation and held-out cost by circuit size with three training seeds"><figcaption>Duplication is compared with the same extra training. Salience pruning physically removes parameters.</figcaption></figure>
 <h2>Learning and failure modes</h2><figure><img src="/figures/learning.png" alt="Validation learning curves across five base architectures"><figcaption>Shading shows the range across three training seeds; these are validation measurements.</figcaption></figure><figure><img src="/figures/robustness.png" alt="Heatmap of controller costs under severe weather, sensor bias, CO2 dropout and reduced capacity"><figcaption>Faults expose the limits of soft rewards and a simplified model. No safety guarantee is claimed.</figcaption></figure>
 <h2>Read the full evidence</h2><p>The full report includes physical equations, reward weights, source provenance, per-seed results, confidence intervals, class lesions, exact checkpoint hashes, independent trajectory readback and limitations.</p><div class="downloads"><a href="/api/download/report/report.md">Full research report ↓</a><a href="/api/download/report/case-study.md">Portfolio copy ↓</a><a href="/api/download/report/episodes.csv">Every episode · CSV ↓</a><a href="/api/download/report/verification.json">Verification ↓</a><a href="/api/download/protocol/protocol.md">Frozen protocol ↓</a><a href="/api/download/report/study-bundle.zip">Study bundle ↓</a></div><p><a href="https://github.com/thekozugroup/SomaHouse">Code, trained circuits and reproducible study on GitHub ↗</a></p>
 <h2>Sources</h2><ul class="sources"><li><a href="https://male-cns.janelia.org/download/">MaleCNS v1.0, FlyEM / HHMI Janelia, Cambridge, MRC LMB and Google Research · CC BY 4.0</a></li><li><a href="https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/">Google Research: the male fruit fly connectome</a></li><li><a href="https://energyplus.readthedocs.io/en/stable/guides/engineering-reference/2.1-basis-for-the-zone-and-air-system-integration.html">EnergyPlus zone heat-balance reference</a></li><li><a href="https://ibpsa.github.io/project1-boptest/docs-design/core_kpi.html">BOPTEST separate energy and comfort metrics</a></li><li><a href="https://proceedings.mlr.press/v139/mora21a.html">Policy Optimization via Differentiable Simulation</a></li></ul><p class="small">Independent reduced-order simulator. Not an official BOPTEST benchmark or a validated EnergyPlus building. Code MIT; derived connectome data and checkpoints CC BY 4.0.</p></main><footer><span>Michael Wong · SomaHouse · 2026</span><span>Measured results, including the negative ones.</span></footer></body></html>"""
+    if extension_html:
+        page = page.replace(f"{preview_html}{article}", f"{preview_html}{extension_html}<h2>Study 1 / learning and circuit surgery</h2>{article}")
     (ROOT / "somahouse/static/case-study.html").write_text(page)
     docs = ROOT / "docs"; docs.mkdir(exist_ok=True)
     (docs / "fonts").mkdir(exist_ok=True)
     for p in (ROOT / "somahouse/static/fonts").iterdir(): shutil.copy2(p, docs / "fonts" / p.name)
+    if preview:
+        for name in ("preview.mp4", "preview-poster.png"):
+            shutil.copy2(ROOT / "somahouse/static" / name, docs / name)
+        shutil.copy2(REPORTS / "preview.json", docs / "preview.json")
     css = (ROOT / "somahouse/static/style.css").read_text().replace("/assets/fonts/", "fonts/")
     (docs / "style.css").write_text(css)
     for p in REPORTS.glob("*.png"): shutil.copy2(p, docs / p.name)
     for name in ("report.md", "case-study.md", "episodes.csv", "verification.json", "selection.json", "results.json", "seed-results.csv"):
         shutil.copy2(REPORTS / name, docs / name)
     shutil.copy2(ROOT / "research/protocol.md", docs / "protocol.md")
-    static_page = page.replace("/assets/style.css", "style.css").replace("/figures/", "").replace("/api/download/report/", "").replace("/api/download/protocol/", "")
+    if extension_text:
+        shutil.copytree(REPORTS / "teacher", docs / "teacher", dirs_exist_ok=True)
+        shutil.copy2(ROOT / "research/teacher-protocol.md", docs / "teacher/teacher-protocol.md")
+    static_page = page.replace("/assets/", "").replace("/figures/", "").replace("/api/download/report/", "").replace("/api/download/protocol/", "")
     static_page = static_page.replace('<a class="brand" href="/">', '<a class="brand" href="index.html">')
     static_page = static_page.replace('<a href="/">House lab</a>', '<a href="https://github.com/thekozugroup/SomaHouse#run-the-lab">Run the lab</a>')
     static_page = static_page.replace('<a href="/brain.html">The circuit</a>', '<a href="report.md">Full report</a>').replace('href="/case-study.html"', 'href="index.html"')
+    static_page = static_page.replace("/api/download/teacher/", "teacher/")
     (docs / "index.html").write_text(static_page)
     write_json(docs / "project-entry.json", {"title": "SomaHouse", "author": "Michael Wong", "year": 2026,
                 "description": "A fly-derived modular circuit learns to regulate a simulated house. Three-seed training, circuit surgery and transparent control comparisons.",
                 "repository": "https://github.com/thekozugroup/SomaHouse", "caseStudy": "index.html",
                 "tags": ["Machine learning", "Building control", "Connectomics", "Research"],
-                "hero": "comparison.png", "status": "Simulation study completed"})
+                "hero": "comparison.png", "video": "preview.mp4" if preview else None,
+                "status": "Two registered simulation studies completed" if extension_text else "Simulation study completed"})
     # Bundle data and representative trained weights; omit itself to keep generation stable.
     with zipfile.ZipFile(REPORTS / "study-bundle.zip", "w", zipfile.ZIP_DEFLATED) as z:
         for name in ("README.md", "LICENSE", "THIRD_PARTY.md", "pyproject.toml", "uv.lock"):
             z.write(ROOT / name, name)
         for folder in ("somahouse", "tests"):
             for p in sorted((ROOT / folder).rglob("*")):
-                if p.is_file() and p.suffix in (".py", ".html", ".css", ".js", ".ttf", ".txt"):
+                if p.is_file() and p.suffix in (".py", ".html", ".css", ".js", ".ttf", ".txt", ".mp4", ".png"):
                     z.write(p, str(p.relative_to(ROOT)))
         for name in ("report.md", "case-study.md", "episodes.csv", "selection.json", "results.json", "verification.json", "seed-results.csv"):
             z.write(REPORTS / name, f"reports/{name}")
         for p in sorted(REPORTS.glob("*.png")): z.write(p, f"reports/{p.name}")
-        for p in sorted((ROOT / "checkpoints").glob("*.pt")): z.write(p, f"checkpoints/{p.name}")
+        if preview: z.write(REPORTS / "preview.json", "reports/preview.json")
+        for p in sorted((ROOT / "checkpoints").rglob("*.pt")): z.write(p, str(p.relative_to(ROOT)))
         z.write(ROOT / "research/protocol.md", "research/protocol.md")
+        if extension_text:
+            z.write(ROOT / "research/teacher-protocol.md", "research/teacher-protocol.md")
+            for p in sorted((REPORTS / "teacher").rglob("*")):
+                if p.is_file() and p.suffix != ".log": z.write(p, str(p.relative_to(ROOT)))
         for p in sorted((ROOT / "data/connectome").iterdir()): z.write(p, f"data/connectome/{p.name}")
     shutil.copy2(REPORTS / "study-bundle.zip", docs / "study-bundle.zip")
     manifest = {str(p.relative_to(ROOT)): {"sha256": sha(p), "bytes": p.stat().st_size}

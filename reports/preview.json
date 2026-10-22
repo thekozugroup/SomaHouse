@@ -1,0 +1,24 @@
+{
+  "study": 2,
+  "controller": "fly-teacher-reward",
+  "training_seed": 141,
+  "scenario_seed": 7000001,
+  "checkpoint": "checkpoints/teacher/fly-teacher-reward-s141.pt",
+  "checkpoint_sha256": "ddae080670553e29ffbf491dbe0a81250831df72a21c0ed76bd37238a86d4866",
+  "trace_sha256": "d05e93850a427e859b02265216b44cf98858e3b15b2e024e8004411228a02e79",
+  "verified_decisions": 288,
+  "maximum_action_temperature_replay_error": 0.0,
+  "simulated_hours": 48,
+  "duration_seconds": 72,
+  "simulation_speed": 2400,
+  "video_fps": 24,
+  "decision_fps": 4,
+  "resolution": [
+    1280,
+    720
+  ],
+  "video_sha256": "34b3728e7ea73a679115d88dde01d1462cba5a90afd08e9253fedc931e571209",
+  "poster_sha256": "82af3a4d5092827ebe6e57b5117b15f7c21d4e0cba2e84eddd003170d2ef80e7",
+  "activity": "saved-model tanh cell/hub/port values; magnitude in grayscale; schematic positions",
+  "online_learning": false
+}

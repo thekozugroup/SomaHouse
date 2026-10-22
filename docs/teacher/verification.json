@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "mode": "strict_1e-7",
+  "selected_checkpoints": 15,
+  "initial_checkpoints": 6,
+  "models": [
+    {
+      "id": "fly-imitation-s107",
+      "sha256": "f9742ba327e150a96d506dd6f355310b7fe1f6a80f37706a9f80d1ccc181c93b",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-teacher-reward-s107",
+      "sha256": "83f259d143e6ec826e9f6ff3faa1b663d4b6a5089abbc5d06b0305a804022115",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-reward-only-s107",
+      "sha256": "9c18a4ac0d795ba102147dea5944ca8d33e430ce1c34587c7b420aa52b4fc5af",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "dense-imitation-s107",
+      "sha256": "d71bdebe6de957a7ebf096e2f186299ba958f9eeb84897b2b0c32ce262f1a975",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    },
+    {
+      "id": "dense-teacher-reward-s107",
+      "sha256": "587f9405fb49b878f1786777c656cab29882585204a2cf518123db8af603399b",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    },
+    {
+      "id": "fly-imitation-s119",
+      "sha256": "f0accf3bc7e2619da73977f0c94b1c470b42d7149f74816e6cb962ed241df9be",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-teacher-reward-s119",
+      "sha256": "ad41d1f506dcbce771dcebecc752815661ed634d6a2964dcd048b50cb855ac48",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-reward-only-s119",
+      "sha256": "456af561d65e4f644fcc9976830215e3bf4f52f7380b71a053e2ce7abf2ff4d6",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "dense-imitation-s119",
+      "sha256": "5ac85f7b3f0932343375874251c9360f2895660f090178f4801fe76d78cc064e",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    },
+    {
+      "id": "dense-teacher-reward-s119",
+      "sha256": "c4adfee6197627b2bc31ae71b7332397e45b8dced8d23055b83b841eb52153ec",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    },
+    {
+      "id": "fly-imitation-s141",
+      "sha256": "53efc7ec32cfdbd4596b1ce6a2ff5da8fe006a94e9b3ff9a744ccb838bcc25a7",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-teacher-reward-s141",
+      "sha256": "ddae080670553e29ffbf491dbe0a81250831df72a21c0ed76bd37238a86d4866",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "fly-reward-only-s141",
+      "sha256": "142feced3445daab41f89b5c23f0771bdeaf77cb2a000f28aca99eb627ec934e",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 4952
+    },
+    {
+      "id": "dense-imitation-s141",
+      "sha256": "496e51665f5c9b2b2dfae1b228e1f5fa0d3563638f559b8b50dfe11f0170ec22",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    },
+    {
+      "id": "dense-teacher-reward-s141",
+      "sha256": "08f9ef553c7b686e00a4702e247df258910755d40af91f18d1aa8657c7a9136e",
+      "exact_reload": true,
+      "active_recurrent_weights_changed": 7936
+    }
+  ],
+  "normal_test_replay": [
+    {
+      "controller": "teacher",
+      "training_seed": 0,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "balance",
+      "training_seed": 0,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-imitation",
+      "training_seed": 107,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-teacher-reward",
+      "training_seed": 107,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-reward-only",
+      "training_seed": 107,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-imitation",
+      "training_seed": 107,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-teacher-reward",
+      "training_seed": 107,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-imitation",
+      "training_seed": 119,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-teacher-reward",
+      "training_seed": 119,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-reward-only",
+      "training_seed": 119,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-imitation",
+      "training_seed": 119,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-teacher-reward",
+      "training_seed": 119,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-imitation",
+      "training_seed": 141,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-teacher-reward",
+      "training_seed": 141,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "fly-reward-only",
+      "training_seed": 141,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-imitation",
+      "training_seed": 141,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    },
+    {
+      "controller": "dense-teacher-reward",
+      "training_seed": 141,
+      "episodes": 100,
+      "max_metric_error": 0.0
+    }
+  ],
+  "numpy_physics": [
+    {
+      "controller": "fly-teacher-reward",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 1.0197190370320186e-05,
+        "co2": 0.00013411577390343155,
+        "lux": 2.760067582130432e-05,
+        "power_kw": 2.195982977681865e-07
+      },
+      "independent_totals": {
+        "energy_kwh": 66.96085758019488,
+        "thermal_degree_hours": 0.8465482911795341,
+        "co2_ppm_hours": 19.969781071258353,
+        "light_lux_hours": 1.142017079724206
+      }
+    },
+    {
+      "controller": "teacher",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 1.1630863877343245e-05,
+        "co2": 0.00018133050093638303,
+        "lux": 2.2649765014648438e-05,
+        "power_kw": 2.4771669515644135e-07
+      },
+      "independent_totals": {
+        "energy_kwh": 72.32177573987707,
+        "thermal_degree_hours": 0.13175202441599212,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.1681695468723776e-05
+      }
+    }
+  ],
+  "selection_sha256": "35cc8e67bbfcfbf7abddbf8284cd1475f6bd615916ced0402dc8108393a4cd8f",
+  "protocol_sha256": "f3209259cba71a496b6e205709c56112b9212a3917aab946a7c3af37cc4820d0",
+  "test_rows": 3332,
+  "comparisons_recomputed": 9,
+  "validation_teacher_state_action_mse": {
+    "fly-imitation-s107": 0.0012693787222007014,
+    "fly-teacher-reward-s107": 0.02376582478367103,
+    "fly-reward-only-s107": 0.034807483558931075,
+    "dense-imitation-s107": 0.0012285311017371401,
+    "dense-teacher-reward-s107": 0.023199811361135098,
+    "fly-imitation-s119": 0.0012980254861961128,
+    "fly-teacher-reward-s119": 0.023345449687136956,
+    "fly-reward-only-s119": 0.053409890155307935,
+    "dense-imitation-s119": 0.001296812638934676,
+    "dense-teacher-reward-s119": 0.024664120502873425,
+    "fly-imitation-s141": 0.0012592460277321372,
+    "fly-teacher-reward-s141": 0.019992332174701404,
+    "fly-reward-only-s141": 0.036525634537813156,
+    "dense-imitation-s141": 0.001028812726771219,
+    "dense-teacher-reward-s141": 0.0063218008694497715
+  },
+  "mse_diagnostic": "unweighted executed-action MSE on 32 validation teacher trajectories; not a checkpoint selection rule"
+}

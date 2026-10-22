@@ -3,7 +3,7 @@
 A modular fly-derived circuit learns to regulate a simulated house: temperature,
 fresh air and daylight-aware lighting, coordinated through a central learned hub.
 
-**Result:** doubling the spokes improved held-out cost by **4.1%** against an
+**Study 1 result:** doubling the spokes improved held-out cost by **4.1%** against an
 equally trained smaller circuit. The stronger conventional balance controller
 still used less energy and met more comfort targets. Dense artificial wiring
 also beat the same-size fly-derived base. This is a simulation study, with
@@ -21,6 +21,18 @@ negative findings included.
   [selection record](reports/selection.json),
   [independent verification](reports/verification.json).
 
+## Watch an actual test
+
+[72-second test preview](somahouse/static/preview.mp4): house sensors on the left,
+measured circuit activity on the right, timestamped actions below. Every decision
+is replayed from a saved checkpoint and checked against its recorded test trace.
+48 simulated hours play at **2,400× simulation speed**; no learning happens during
+playback. [Video provenance](reports/preview.json). The lab and portable site embed
+the video with native playback controls. All outputs use a neutral grayscale palette.
+
+To rerender, install FFmpeg and run `uv run --no-sync python -m somahouse.preview`
+(or `--study 2` for the teacher-study representative), then regenerate the report.
+
 ## Run the lab
 
 Python 3.12 and [uv](https://docs.astral.sh/uv/) are recommended. The saved models
@@ -36,7 +48,7 @@ Open [the house lab](http://127.0.0.1:8766/),
 [the case study](http://127.0.0.1:8766/case-study.html).
 
 Change temperature targets, outside weather, daylight, occupancy and sensor or
-equipment faults. Disconnect the hub or a spoke. Inspect all 24 trained models,
+equipment faults. Disconnect the hub or a spoke. Inspect the trained models from both studies,
 real source IDs, private recurrent weights and structural lineage. Compare
 against conventional controls. Download trained checkpoints or the study bundle.
 
@@ -100,11 +112,34 @@ compliance. These soft targets are not safety guarantees. This is an independent
 reduced-order model, not a calibrated building, real-home trial, or official
 BOPTEST benchmark. No general advantage from biological wiring is established.
 
+## Study 2: teaching before reward training
+
+**Result:** teacher-guided reward training reduces cost **7.4% versus reward-only**
+and **10.1% versus imitation alone**. It has **1.34% higher cost than the tuned
+conventional teacher**, with an uncertainty interval spanning zero. It uses
+**8.8% less electricity**, but meets fewer temperature and CO₂ targets. The
+registered superiority test **did not pass**. Fly versus dense cost differences
+also do not establish a connectome advantage.
+
+A separate registered extension trains standalone fly-derived models by imitating
+a tuned conventional teacher, then improving through simulator reward feedback.
+It compares imitation-only, reward-only and dense controls across three new
+training seeds. The teacher is absent at neural inference. Original study scores
+remain unchanged. The final test has **100 fresh 48-hour scenarios**, plus four
+fault shifts with 24 scenarios each. A superiority claim requires lower cost,
+consistent seed improvement, and registered comfort/energy non-inferiority gates.
+
+- [Full teacher-study report](reports/teacher/report.md).
+- [Registered plan](research/teacher-protocol.md).
+- [Every episode](reports/teacher/episodes.csv), [results and gates](reports/teacher/results.json),
+  [frozen selection](reports/teacher/selection.json), [readback](reports/teacher/verification.json).
+
 ## Verify the saved experiment
 
 ```sh
 uv run --no-sync python -m pytest -q
 uv run --no-sync python -m somahouse.verify
+uv run --no-sync python -m somahouse.teacher_verify
 uv run --no-sync python -m somahouse.report
 ```
 
@@ -125,6 +160,7 @@ directories with those names. Keep the source seed and frozen protocol. Then:
 uv run --no-sync python -m somahouse.study train
 uv run --no-sync python -m somahouse.study evaluate
 uv run --no-sync python -m somahouse.verify
+uv run --no-sync python -m somahouse.teacher_verify
 uv run --no-sync python -m somahouse.report
 ```
 

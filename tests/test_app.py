@@ -58,3 +58,29 @@ def test_finite_48_hour_session_and_finished_readback():
     assert r.json()["trace"][-1]["hour"] == 48
     after = client.post("/api/advance", json={"session": ident, "steps": 1}).json()
     assert after["done"] and after["trace"] == []
+
+
+def test_teacher_study_default_and_conventional_reference_are_separate():
+    from somahouse.brain import ROOT
+    import json
+    import numpy as np
+    from somahouse.sim import actuate, observe, scenarios
+    from somahouse.teacher import Teacher
+    selection_file = ROOT / "reports/teacher/selection.json"
+    results_file = ROOT / "reports/teacher/results.json"
+    if not results_file.exists():
+        return
+    selection = json.loads(selection_file.read_text())
+    latest = client.post("/api/start", json={"controller": "selected", "seed": 572}).json()
+    assert latest["controller"].startswith("fly-teacher-reward-s")
+    assert latest["stats"]["spoke_units"] == 256
+    started = client.post("/api/start", json={"controller": "teacher", "seed": 572}).json()
+    assert started["stats"] is None
+    env = scenarios([572], 288)
+    expected = actuate(Teacher(selection["teacher"]["config"])(observe(env.initial, env, 0)))[0].numpy()
+    actual = client.post("/api/advance", json={"session": started["session"], "steps": 1}).json()["trace"][0]["action"]
+    assert np.array_equal(actual, expected)
+    ident = latest["controller"]
+    assert client.get(f"/api/brain/{ident}").status_code == 200
+    assert client.get(f"/api/download/checkpoint/{ident}").status_code == 200
+    assert client.get("/api/download/teacher/teacher-protocol.md").status_code == 200

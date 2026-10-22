@@ -33,3 +33,8 @@ The interesting part was making the experiment inspectable: following signals th
 This is a simulated control study, not a living brain or a system ready for someone's home. The next experiment would use a more detailed building model, explicit constraints on comfort and ventilation, and stronger fault handling. I would also test whether the weak context circuit can be removed after retraining.
 
 Project by Michael Wong · 2026. Code MIT; MaleCNS-derived data and trained checkpoints CC BY 4.0. Full methods and limitations: reports/report.md.
+
+
+## A second experiment: learn from a teacher
+
+I taught a new circuit to imitate a conventional controller, then trained it further against the reward. I also tuned the conventional reference and reserved 100 new test scenarios. Its cost was 1.34% higher than that stronger teacher. The registered superiority test did not pass. I kept both conventional references in the report so the comparison stays visible. This is a new experiment; the original result above remains valid. Full methods, checks and physical metrics are in teacher/report.md.

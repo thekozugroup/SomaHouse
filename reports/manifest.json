@@ -191,6 +191,90 @@
     "sha256": "2d4d66d6641f285a8350868a2c27c088ffc2324f72d32a1db6894f53bfa15a6e",
     "bytes": 61401
   },
+  "checkpoints/teacher/dense-imitation-s107.pt": {
+    "sha256": "d71bdebe6de957a7ebf096e2f186299ba958f9eeb84897b2b0c32ce262f1a975",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/dense-imitation-s119.pt": {
+    "sha256": "5ac85f7b3f0932343375874251c9360f2895660f090178f4801fe76d78cc064e",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/dense-imitation-s141.pt": {
+    "sha256": "496e51665f5c9b2b2dfae1b228e1f5fa0d3563638f559b8b50dfe11f0170ec22",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/dense-initial-s107.pt": {
+    "sha256": "300a247356f721abec4d8dcf159f094e38af9770606db6fe6ca370002254cfc7",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/dense-initial-s119.pt": {
+    "sha256": "7f9ec52ee4f965f93e3c0d8582710b22c202f1c48c0cd58699f9c274faf82fdd",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/dense-initial-s141.pt": {
+    "sha256": "6bfb3f553bcfecdb2496f20cd2729f2e96cd854dbb6f94a9a87813b888f12590",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/dense-teacher-reward-s107.pt": {
+    "sha256": "587f9405fb49b878f1786777c656cab29882585204a2cf518123db8af603399b",
+    "bytes": 113411
+  },
+  "checkpoints/teacher/dense-teacher-reward-s119.pt": {
+    "sha256": "c4adfee6197627b2bc31ae71b7332397e45b8dced8d23055b83b841eb52153ec",
+    "bytes": 113411
+  },
+  "checkpoints/teacher/dense-teacher-reward-s141.pt": {
+    "sha256": "08f9ef553c7b686e00a4702e247df258910755d40af91f18d1aa8657c7a9136e",
+    "bytes": 113411
+  },
+  "checkpoints/teacher/fly-imitation-s107.pt": {
+    "sha256": "f9742ba327e150a96d506dd6f355310b7fe1f6a80f37706a9f80d1ccc181c93b",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/fly-imitation-s119.pt": {
+    "sha256": "f0accf3bc7e2619da73977f0c94b1c470b42d7149f74816e6cb962ed241df9be",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/fly-imitation-s141.pt": {
+    "sha256": "53efc7ec32cfdbd4596b1ce6a2ff5da8fe006a94e9b3ff9a744ccb838bcc25a7",
+    "bytes": 113221
+  },
+  "checkpoints/teacher/fly-initial-s107.pt": {
+    "sha256": "57841b4b4ba8f15cc2371f5033fcd2f8bb1c6727ccf208cffebad61b7dfb5be9",
+    "bytes": 113185
+  },
+  "checkpoints/teacher/fly-initial-s119.pt": {
+    "sha256": "48c58e7773aba8cc0beab9ec81f74840723f66aa707166156fb86391897a9185",
+    "bytes": 113185
+  },
+  "checkpoints/teacher/fly-initial-s141.pt": {
+    "sha256": "fb987e250f3d0550c08b7818edd23baf730265c32b08f0e51c31e8777e290262",
+    "bytes": 113185
+  },
+  "checkpoints/teacher/fly-reward-only-s107.pt": {
+    "sha256": "9c18a4ac0d795ba102147dea5944ca8d33e430ce1c34587c7b420aa52b4fc5af",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/fly-reward-only-s119.pt": {
+    "sha256": "456af561d65e4f644fcc9976830215e3bf4f52f7380b71a053e2ce7abf2ff4d6",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/fly-reward-only-s141.pt": {
+    "sha256": "142feced3445daab41f89b5c23f0771bdeaf77cb2a000f28aca99eb627ec934e",
+    "bytes": 113257
+  },
+  "checkpoints/teacher/fly-teacher-reward-s107.pt": {
+    "sha256": "83f259d143e6ec826e9f6ff3faa1b663d4b6a5089abbc5d06b0305a804022115",
+    "bytes": 113375
+  },
+  "checkpoints/teacher/fly-teacher-reward-s119.pt": {
+    "sha256": "ad41d1f506dcbce771dcebecc752815661ed634d6a2964dcd048b50cb855ac48",
+    "bytes": 113375
+  },
+  "checkpoints/teacher/fly-teacher-reward-s141.pt": {
+    "sha256": "ddae080670553e29ffbf491dbe0a81250831df72a21c0ed76bd37238a86d4866",
+    "bytes": 113375
+  },
   "data/connectome/provenance.json": {
     "sha256": "e3766c0e7423ac24239b26c7487a642b6eef1ea6cd257b37cb4a31954626114a",
     "bytes": 115840
@@ -200,44 +284,48 @@
     "bytes": 114754
   },
   "reports/capacity.png": {
-    "sha256": "38c50943823cd21c54d20bef9ac8c3602ad107580425c98ad2e8eeb1de1c07a6",
-    "bytes": 64934
+    "sha256": "1e1fac211880f8bb11540724341412d044dfe4f5ecf6a8c38e207558bc56b72c",
+    "bytes": 54784
   },
   "reports/case-study.md": {
-    "sha256": "d4c03c5ad84fa7eaba31f01a44829f1b01fd1aea12b24481f622a693731e1f5c",
-    "bytes": 3765
+    "sha256": "2632272690c72a20a09c02f4ef732642ccaec7b0585bb0764daf1492fbe02742",
+    "bytes": 4313
   },
   "reports/comparison.png": {
-    "sha256": "7b5bcf4592c518ce3127247e5a939b35ad7131d381a0eb1fca92a0a8e92e153b",
-    "bytes": 62049
+    "sha256": "c5a4054fd8995e36e9f9d3bfbf67b9e23ef8d3ed285476a60cd3cdce56cd3560",
+    "bytes": 53949
   },
   "reports/episodes.csv": {
     "sha256": "1eaf174ca0ed10cd9eb8859cb75d313b1603d2e225e7c9f26acbf4e1f36630c9",
     "bytes": 1021687
   },
   "reports/interventions.png": {
-    "sha256": "56bc2098a7a95449a2f35d2eab648ddac011868fd348216826fa492d41883873",
-    "bytes": 43310
+    "sha256": "3a09cd6d199e58f5abb5bf632f3142ea389471dc1f4739be2a896055876da5dc",
+    "bytes": 38270
   },
   "reports/learning.png": {
-    "sha256": "9e3a5aacfc8a200c65037c52217b2dbf9b13d72b7af2afdacc648d5c7c891973",
-    "bytes": 102818
+    "sha256": "7b6dd29008d1654cc52944a302dd303247bf078957ec1c8dd80b790ad33243d3",
+    "bytes": 87482
+  },
+  "reports/preview.json": {
+    "sha256": "e5da94b2b3c32f9cc84641a41ffa4998dc813765f898992f6b963a97d2e7b2ba",
+    "bytes": 890
   },
   "reports/report.md": {
-    "sha256": "a1dfa896bd0e67deb136d9152ceae5cab9bc442f5ed4a9089393144c5f267284",
-    "bytes": 22401
+    "sha256": "71d05344854381823e766380b7912e64287795f2beb65937904190e9c661e640",
+    "bytes": 34734
   },
   "reports/response.png": {
-    "sha256": "ff7eea476a6b75d962d44147e388cfe6d7deccd11a6e4390e2495c5bd533c01e",
-    "bytes": 325542
+    "sha256": "5dc3e0944418f344227d0f2ce9a36b8cf12715cfdb175ba8e7d0ba1369c7b802",
+    "bytes": 259389
   },
   "reports/results.json": {
     "sha256": "bb5a6c9c1a86a399b5818073e06491a951f388d771517dacc124599d69ae95b7",
     "bytes": 69364
   },
   "reports/robustness.png": {
-    "sha256": "4c828e02e2391587fc55406049febced8074459e73ef7832938d8c3950badb87",
-    "bytes": 83855
+    "sha256": "9315aa383a3d0295a22e3e63ce6e5120cb1d61c8094983fe5a056d62e42ebb11",
+    "bytes": 63487
   },
   "reports/seed-results.csv": {
     "sha256": "4d40774b7dce7f662f3d7fe8acf765f478be6d6a5ee29008fba60e125c1156ae",
@@ -248,8 +336,108 @@
     "bytes": 132216
   },
   "reports/study-bundle.zip": {
-    "sha256": "2df4945af53195d4c6064bd0cf7d1a1777ffa41c26d104931212d1a0ba4d7ce6",
-    "bytes": 3614871
+    "sha256": "069c03a675edc7da72f68cd1e1542dece09aedbd665f894a081907b43fedc1f3",
+    "bytes": 7052189
+  },
+  "reports/teacher/comparison.png": {
+    "sha256": "33d40deb0e2c03f9e80b7d8ea7a7a45a8f9aa18b2990a80ecbb70fbf9a28865b",
+    "bytes": 49541
+  },
+  "reports/teacher/dense-imitation-s107.json": {
+    "sha256": "b8877cb6ad0f1e0c418e9919303b15dd72f44acbea748e2e7404364977a105ff",
+    "bytes": 4131
+  },
+  "reports/teacher/dense-imitation-s119.json": {
+    "sha256": "c467a242e2fea447535a1d478b726199a2fee24fc042a71b3a13db451f3e7855",
+    "bytes": 4138
+  },
+  "reports/teacher/dense-imitation-s141.json": {
+    "sha256": "637fa5da434ad5dfcc607acf2b23fbe563a2a406ec3665a4040ad12b1b481c68",
+    "bytes": 4142
+  },
+  "reports/teacher/dense-teacher-reward-s107.json": {
+    "sha256": "ea416343f89a228b865872b6e824a775466d660510f6aaf577cf5360f298330d",
+    "bytes": 6526
+  },
+  "reports/teacher/dense-teacher-reward-s119.json": {
+    "sha256": "4e9784e29a1dc0dfbfaa0d3ce5bc173a2d85b6bbb4d9abd405e1304111ebef9f",
+    "bytes": 6533
+  },
+  "reports/teacher/dense-teacher-reward-s141.json": {
+    "sha256": "98b1983f264bc81e84f9df4552795e8c72eabafca2378f10ff4632e6ccf07f54",
+    "bytes": 6537
+  },
+  "reports/teacher/episodes.csv": {
+    "sha256": "08d993e5a575e7a689c87b73d3f921693f49f73548684afb3ea153e1e54aea0e",
+    "bytes": 946939
+  },
+  "reports/teacher/fly-imitation-s107.json": {
+    "sha256": "860a4b141eae2b474ea3f9dc76dcd089797e5665010dca6c13eddb6199e16bc6",
+    "bytes": 4137
+  },
+  "reports/teacher/fly-imitation-s119.json": {
+    "sha256": "43a2d2e377486baaf86c360fc535a8517f199254804c761ececbb14c3c9d2673",
+    "bytes": 4129
+  },
+  "reports/teacher/fly-imitation-s141.json": {
+    "sha256": "8ba52a27b58e0e5134126b0fdc6de755df3dac2c9692174fd7e399093a944d8e",
+    "bytes": 4128
+  },
+  "reports/teacher/fly-reward-only-s107.json": {
+    "sha256": "848e775619f2f8c08d28a4ead67a8c914eb303cd5937b28e44ce2ed81f7fcc1c",
+    "bytes": 9004
+  },
+  "reports/teacher/fly-reward-only-s119.json": {
+    "sha256": "7f560b0e69c7ae3d60494475f17231ad8851c725a064c21f6a2f1852a8684887",
+    "bytes": 9017
+  },
+  "reports/teacher/fly-reward-only-s141.json": {
+    "sha256": "a18cd333bf65396a589b9e3c4aea0130d1d9356c3c2a974ffc9d053ae069a39a",
+    "bytes": 9013
+  },
+  "reports/teacher/fly-teacher-reward-s107.json": {
+    "sha256": "67d681d4c5b1a157c43f50143f18744f28a613d158ab78b6839c4b7149759685",
+    "bytes": 6525
+  },
+  "reports/teacher/fly-teacher-reward-s119.json": {
+    "sha256": "b313555a227aaaa6e6e32306ba17e852442dceaaed38b095b0553f3f8774c71b",
+    "bytes": 6516
+  },
+  "reports/teacher/fly-teacher-reward-s141.json": {
+    "sha256": "38b4c8dbd3a751f0b70f9b9a45f2dd042ae9c25878325f8254f96b8b403ca367",
+    "bytes": 6518
+  },
+  "reports/teacher/learning.png": {
+    "sha256": "8fc20f4023c490217539b64188e5805462014ad6deed8d4ba679a978a5a362ec",
+    "bytes": 83763
+  },
+  "reports/teacher/report.md": {
+    "sha256": "0810ff75ae891f081dca1e68003bb246be9954f6584fa4f089ad7c835a19eb7a",
+    "bytes": 12310
+  },
+  "reports/teacher/results.json": {
+    "sha256": "f4427181c82c9acdccbf41dbe451bbc83a9cd05642624767edbb050a0ef838b4",
+    "bytes": 28606
+  },
+  "reports/teacher/selection.json": {
+    "sha256": "35cc8e67bbfcfbf7abddbf8284cd1475f6bd615916ced0402dc8108393a4cd8f",
+    "bytes": 104654
+  },
+  "reports/teacher/teacher.json": {
+    "sha256": "2480bc801143af8b09bd6feb71e7fc74251803f726e128ea2a86e3b278e649b6",
+    "bytes": 26396
+  },
+  "reports/teacher/trace-fly-teacher-reward.json": {
+    "sha256": "d05e93850a427e859b02265216b44cf98858e3b15b2e024e8004411228a02e79",
+    "bytes": 283350
+  },
+  "reports/teacher/trace-teacher.json": {
+    "sha256": "c20ecce71f17347fad45a3cb2dfae9e2b01ac7163daf42a8fc4e0dabb300dfc4",
+    "bytes": 255655
+  },
+  "reports/teacher/verification.json": {
+    "sha256": "dd7f8965489c123ff545efe37435b6c594a885ee0a137689eeb593107854f5e2",
+    "bytes": 7735
   },
   "reports/trace-balance.json": {
     "sha256": "d9335c3e5a19b7c1a24b12786d477352a9311a31eec9c789fea6b9b506ecffc2",
@@ -368,16 +556,16 @@
     "bytes": 10011
   },
   "docs/capacity.png": {
-    "sha256": "38c50943823cd21c54d20bef9ac8c3602ad107580425c98ad2e8eeb1de1c07a6",
-    "bytes": 64934
+    "sha256": "1e1fac211880f8bb11540724341412d044dfe4f5ecf6a8c38e207558bc56b72c",
+    "bytes": 54784
   },
   "docs/case-study.md": {
-    "sha256": "d4c03c5ad84fa7eaba31f01a44829f1b01fd1aea12b24481f622a693731e1f5c",
-    "bytes": 3765
+    "sha256": "2632272690c72a20a09c02f4ef732642ccaec7b0585bb0764daf1492fbe02742",
+    "bytes": 4313
   },
   "docs/comparison.png": {
-    "sha256": "7b5bcf4592c518ce3127247e5a939b35ad7131d381a0eb1fca92a0a8e92e153b",
-    "bytes": 62049
+    "sha256": "c5a4054fd8995e36e9f9d3bfbf67b9e23ef8d3ed285476a60cd3cdce56cd3560",
+    "bytes": 53949
   },
   "docs/episodes.csv": {
     "sha256": "1eaf174ca0ed10cd9eb8859cb75d313b1603d2e225e7c9f26acbf4e1f36630c9",
@@ -400,40 +588,52 @@
     "bytes": 4404
   },
   "docs/index.html": {
-    "sha256": "0e069a59455207bb540543a18234e82b730e31b82dba623e6c241ebca3d613d9",
-    "bytes": 8688
+    "sha256": "3389ac2656181c6b0cbc4b6898660135686d592c5c3cbb054ee8a90b93805664",
+    "bytes": 12153
   },
   "docs/interventions.png": {
-    "sha256": "56bc2098a7a95449a2f35d2eab648ddac011868fd348216826fa492d41883873",
-    "bytes": 43310
+    "sha256": "3a09cd6d199e58f5abb5bf632f3142ea389471dc1f4739be2a896055876da5dc",
+    "bytes": 38270
   },
   "docs/learning.png": {
-    "sha256": "9e3a5aacfc8a200c65037c52217b2dbf9b13d72b7af2afdacc648d5c7c891973",
-    "bytes": 102818
+    "sha256": "7b6dd29008d1654cc52944a302dd303247bf078957ec1c8dd80b790ad33243d3",
+    "bytes": 87482
+  },
+  "docs/preview-poster.png": {
+    "sha256": "82af3a4d5092827ebe6e57b5117b15f7c21d4e0cba2e84eddd003170d2ef80e7",
+    "bytes": 75755
+  },
+  "docs/preview.json": {
+    "sha256": "e5da94b2b3c32f9cc84641a41ffa4998dc813765f898992f6b963a97d2e7b2ba",
+    "bytes": 890
+  },
+  "docs/preview.mp4": {
+    "sha256": "34b3728e7ea73a679115d88dde01d1462cba5a90afd08e9253fedc931e571209",
+    "bytes": 1216306
   },
   "docs/project-entry.json": {
-    "sha256": "449ea738a591b0f2288b948404d8cabd75820d03249f40a575a43bd9c02cdc2f",
-    "bytes": 493
+    "sha256": "9f54226259333f56a0072f09ab62a5082665537a4b03e7140f629dd209357803",
+    "bytes": 536
   },
   "docs/protocol.md": {
     "sha256": "db7e0ed00b1fce07f730d4eb140e857f7e6c109fc49c459436c4ac6a3970a2e1",
     "bytes": 7725
   },
   "docs/report.md": {
-    "sha256": "a1dfa896bd0e67deb136d9152ceae5cab9bc442f5ed4a9089393144c5f267284",
-    "bytes": 22401
+    "sha256": "71d05344854381823e766380b7912e64287795f2beb65937904190e9c661e640",
+    "bytes": 34734
   },
   "docs/response.png": {
-    "sha256": "ff7eea476a6b75d962d44147e388cfe6d7deccd11a6e4390e2495c5bd533c01e",
-    "bytes": 325542
+    "sha256": "5dc3e0944418f344227d0f2ce9a36b8cf12715cfdb175ba8e7d0ba1369c7b802",
+    "bytes": 259389
   },
   "docs/results.json": {
     "sha256": "bb5a6c9c1a86a399b5818073e06491a951f388d771517dacc124599d69ae95b7",
     "bytes": 69364
   },
   "docs/robustness.png": {
-    "sha256": "4c828e02e2391587fc55406049febced8074459e73ef7832938d8c3950badb87",
-    "bytes": 83855
+    "sha256": "9315aa383a3d0295a22e3e63ce6e5120cb1d61c8094983fe5a056d62e42ebb11",
+    "bytes": 63487
   },
   "docs/seed-results.csv": {
     "sha256": "4d40774b7dce7f662f3d7fe8acf765f478be6d6a5ee29008fba60e125c1156ae",
@@ -444,12 +644,116 @@
     "bytes": 132216
   },
   "docs/study-bundle.zip": {
-    "sha256": "2df4945af53195d4c6064bd0cf7d1a1777ffa41c26d104931212d1a0ba4d7ce6",
-    "bytes": 3614871
+    "sha256": "069c03a675edc7da72f68cd1e1542dece09aedbd665f894a081907b43fedc1f3",
+    "bytes": 7052189
   },
   "docs/style.css": {
-    "sha256": "b371af89f97858b579dd59f33e3a9388a8b3d4b5f4469c7388e5a5b774b5eaca",
-    "bytes": 7983
+    "sha256": "55d025e0ba0d2b7ecac04092a71ce771d241dd5d6a1f2ce4f653ede6e1e56054",
+    "bytes": 8161
+  },
+  "docs/teacher/comparison.png": {
+    "sha256": "33d40deb0e2c03f9e80b7d8ea7a7a45a8f9aa18b2990a80ecbb70fbf9a28865b",
+    "bytes": 49541
+  },
+  "docs/teacher/dense-imitation-s107.json": {
+    "sha256": "b8877cb6ad0f1e0c418e9919303b15dd72f44acbea748e2e7404364977a105ff",
+    "bytes": 4131
+  },
+  "docs/teacher/dense-imitation-s119.json": {
+    "sha256": "c467a242e2fea447535a1d478b726199a2fee24fc042a71b3a13db451f3e7855",
+    "bytes": 4138
+  },
+  "docs/teacher/dense-imitation-s141.json": {
+    "sha256": "637fa5da434ad5dfcc607acf2b23fbe563a2a406ec3665a4040ad12b1b481c68",
+    "bytes": 4142
+  },
+  "docs/teacher/dense-teacher-reward-s107.json": {
+    "sha256": "ea416343f89a228b865872b6e824a775466d660510f6aaf577cf5360f298330d",
+    "bytes": 6526
+  },
+  "docs/teacher/dense-teacher-reward-s119.json": {
+    "sha256": "4e9784e29a1dc0dfbfaa0d3ce5bc173a2d85b6bbb4d9abd405e1304111ebef9f",
+    "bytes": 6533
+  },
+  "docs/teacher/dense-teacher-reward-s141.json": {
+    "sha256": "98b1983f264bc81e84f9df4552795e8c72eabafca2378f10ff4632e6ccf07f54",
+    "bytes": 6537
+  },
+  "docs/teacher/episodes.csv": {
+    "sha256": "08d993e5a575e7a689c87b73d3f921693f49f73548684afb3ea153e1e54aea0e",
+    "bytes": 946939
+  },
+  "docs/teacher/fly-imitation-s107.json": {
+    "sha256": "860a4b141eae2b474ea3f9dc76dcd089797e5665010dca6c13eddb6199e16bc6",
+    "bytes": 4137
+  },
+  "docs/teacher/fly-imitation-s119.json": {
+    "sha256": "43a2d2e377486baaf86c360fc535a8517f199254804c761ececbb14c3c9d2673",
+    "bytes": 4129
+  },
+  "docs/teacher/fly-imitation-s141.json": {
+    "sha256": "8ba52a27b58e0e5134126b0fdc6de755df3dac2c9692174fd7e399093a944d8e",
+    "bytes": 4128
+  },
+  "docs/teacher/fly-reward-only-s107.json": {
+    "sha256": "848e775619f2f8c08d28a4ead67a8c914eb303cd5937b28e44ce2ed81f7fcc1c",
+    "bytes": 9004
+  },
+  "docs/teacher/fly-reward-only-s119.json": {
+    "sha256": "7f560b0e69c7ae3d60494475f17231ad8851c725a064c21f6a2f1852a8684887",
+    "bytes": 9017
+  },
+  "docs/teacher/fly-reward-only-s141.json": {
+    "sha256": "a18cd333bf65396a589b9e3c4aea0130d1d9356c3c2a974ffc9d053ae069a39a",
+    "bytes": 9013
+  },
+  "docs/teacher/fly-teacher-reward-s107.json": {
+    "sha256": "67d681d4c5b1a157c43f50143f18744f28a613d158ab78b6839c4b7149759685",
+    "bytes": 6525
+  },
+  "docs/teacher/fly-teacher-reward-s119.json": {
+    "sha256": "b313555a227aaaa6e6e32306ba17e852442dceaaed38b095b0553f3f8774c71b",
+    "bytes": 6516
+  },
+  "docs/teacher/fly-teacher-reward-s141.json": {
+    "sha256": "38b4c8dbd3a751f0b70f9b9a45f2dd042ae9c25878325f8254f96b8b403ca367",
+    "bytes": 6518
+  },
+  "docs/teacher/learning.png": {
+    "sha256": "8fc20f4023c490217539b64188e5805462014ad6deed8d4ba679a978a5a362ec",
+    "bytes": 83763
+  },
+  "docs/teacher/report.md": {
+    "sha256": "0810ff75ae891f081dca1e68003bb246be9954f6584fa4f089ad7c835a19eb7a",
+    "bytes": 12310
+  },
+  "docs/teacher/results.json": {
+    "sha256": "f4427181c82c9acdccbf41dbe451bbc83a9cd05642624767edbb050a0ef838b4",
+    "bytes": 28606
+  },
+  "docs/teacher/selection.json": {
+    "sha256": "35cc8e67bbfcfbf7abddbf8284cd1475f6bd615916ced0402dc8108393a4cd8f",
+    "bytes": 104654
+  },
+  "docs/teacher/teacher-protocol.md": {
+    "sha256": "f3209259cba71a496b6e205709c56112b9212a3917aab946a7c3af37cc4820d0",
+    "bytes": 5096
+  },
+  "docs/teacher/teacher.json": {
+    "sha256": "2480bc801143af8b09bd6feb71e7fc74251803f726e128ea2a86e3b278e649b6",
+    "bytes": 26396
+  },
+  "docs/teacher/trace-fly-teacher-reward.json": {
+    "sha256": "d05e93850a427e859b02265216b44cf98858e3b15b2e024e8004411228a02e79",
+    "bytes": 283350
+  },
+  "docs/teacher/trace-teacher.json": {
+    "sha256": "c20ecce71f17347fad45a3cb2dfae9e2b01ac7163daf42a8fc4e0dabb300dfc4",
+    "bytes": 255655
+  },
+  "docs/teacher/verification.json": {
+    "sha256": "dd7f8965489c123ff545efe37435b6c594a885ee0a137689eeb593107854f5e2",
+    "bytes": 7735
   },
   "docs/verification.json": {
     "sha256": "93ec9c6aac394161da1267778b00db47716ac8257a72f3e91e9b40eb48a3a1b3",

@@ -1,0 +1,835 @@
+{
+  "selected": {
+    "config": {
+      "gain": 2.0,
+      "offset": 0.0,
+      "co2_target": 950.0,
+      "vent_gain": 1.2
+    },
+    "validation": {
+      "cost": 0.09353092312812805,
+      "energy_kwh": 46.885284423828125,
+      "thermal_degree_hours": 0.08829957246780396,
+      "co2_ppm_hours": 0.028809018433094025,
+      "light_lux_hours": 1.0596381798677612e-06,
+      "occupied_zone_hours": 51.395904541015625,
+      "thermal_compliant_hours": 50.531314849853516,
+      "co2_compliant_hours": 51.39069366455078,
+      "light_compliant_hours": 51.395904541015625,
+      "action_movement": 3.0918521881103516,
+      "peak_kw": 1.6604726314544678
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "original": true
+      },
+      "validation": {
+        "cost": 0.09884119033813477,
+        "energy_kwh": 46.55300521850586,
+        "thermal_degree_hours": 0.18595674633979797,
+        "co2_ppm_hours": 0.04202673211693764,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.697975158691406,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.8332834243774414,
+        "peak_kw": 1.5869286060333252
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.14799782633781433,
+        "energy_kwh": 47.193511962890625,
+        "thermal_degree_hours": 0.74831223487854,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.286502838134766,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.6600258350372314,
+        "peak_kw": 1.5182666778564453
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.14752666652202606,
+        "energy_kwh": 47.08024597167969,
+        "thermal_degree_hours": 0.7483566999435425,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.29692077636719,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.6923184394836426,
+        "peak_kw": 1.513800859451294
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.14476031064987183,
+        "energy_kwh": 46.2310791015625,
+        "thermal_degree_hours": 0.7354738116264343,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.37504196166992,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.5270118713378906,
+        "peak_kw": 1.4947383403778076
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.14457499980926514,
+        "energy_kwh": 46.15996551513672,
+        "thermal_degree_hours": 0.7359446287155151,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.37504196166992,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.538076877593994,
+        "peak_kw": 1.4937429428100586
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.14988026022911072,
+        "energy_kwh": 45.94959259033203,
+        "thermal_degree_hours": 0.8589571118354797,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 44.95836639404297,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.674713134765625,
+        "peak_kw": 1.4863805770874023
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.14929801225662231,
+        "energy_kwh": 45.849403381347656,
+        "thermal_degree_hours": 0.8551725149154663,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 45.00524139404297,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.7117197513580322,
+        "peak_kw": 1.4838032722473145
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.146498903632164,
+        "energy_kwh": 45.02955627441406,
+        "thermal_degree_hours": 0.8368598222732544,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 45.10940933227539,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.5488924980163574,
+        "peak_kw": 1.4617410898208618
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.1462436020374298,
+        "energy_kwh": 44.968170166015625,
+        "thermal_degree_hours": 0.8357932567596436,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 45.14065933227539,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.560649871826172,
+        "peak_kw": 1.4607763290405273
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.17491978406906128,
+        "energy_kwh": 44.99586868286133,
+        "thermal_degree_hours": 1.3221551179885864,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 40.770851135253906,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.7103545665740967,
+        "peak_kw": 1.4607183933258057
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.1742870807647705,
+        "energy_kwh": 44.909828186035156,
+        "thermal_degree_hours": 1.3174901008605957,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 40.79689025878906,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.7502529621124268,
+        "peak_kw": 1.4587498903274536
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.17124202847480774,
+        "energy_kwh": 44.11793899536133,
+        "thermal_degree_hours": 1.3001048564910889,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 40.869808197021484,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.5888144969940186,
+        "peak_kw": 1.4365928173065186
+      }
+    },
+    {
+      "config": {
+        "gain": 0.65,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.1709316074848175,
+        "energy_kwh": 44.06494903564453,
+        "thermal_degree_hours": 1.297357439994812,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 40.890647888183594,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.600497245788574,
+        "peak_kw": 1.4358086585998535
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.10193400084972382,
+        "energy_kwh": 47.5228157043457,
+        "thermal_degree_hours": 0.20263898372650146,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.635475158691406,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.951629161834717,
+        "peak_kw": 1.6017879247665405
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.10148268193006516,
+        "energy_kwh": 47.4318733215332,
+        "thermal_degree_hours": 0.19877803325653076,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.66151809692383,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.982365131378174,
+        "peak_kw": 1.5979307889938354
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.0990254133939743,
+        "energy_kwh": 46.60197448730469,
+        "thermal_degree_hours": 0.18727220594882965,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.708396911621094,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.8267970085144043,
+        "peak_kw": 1.5871355533599854
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.09882092475891113,
+        "energy_kwh": 46.542476654052734,
+        "thermal_degree_hours": 0.18591277301311493,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.70318603515625,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.8365886211395264,
+        "peak_kw": 1.5871574878692627
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.1030682846903801,
+        "energy_kwh": 46.62799072265625,
+        "thermal_degree_hours": 0.23192062973976135,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.30213928222656,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.0422000885009766,
+        "peak_kw": 1.5675634145736694
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.10264436900615692,
+        "energy_kwh": 46.56034851074219,
+        "thermal_degree_hours": 0.22898170351982117,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.291725158691406,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.0803823471069336,
+        "peak_kw": 1.5663448572158813
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.10034428536891937,
+        "energy_kwh": 45.77062225341797,
+        "thermal_degree_hours": 0.2179800271987915,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.338600158691406,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.9275872707366943,
+        "peak_kw": 1.5525035858154297
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.10017523169517517,
+        "energy_kwh": 45.72901916503906,
+        "thermal_degree_hours": 0.2170330286026001,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.338600158691406,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 2.9387974739074707,
+        "peak_kw": 1.5531076192855835
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.11411471664905548,
+        "energy_kwh": 46.152061462402344,
+        "thermal_degree_hours": 0.403392493724823,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.74483871459961,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.1807849407196045,
+        "peak_kw": 1.5619847774505615
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.11379647254943848,
+        "energy_kwh": 46.10584259033203,
+        "thermal_degree_hours": 0.4016808867454529,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.75525665283203,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.222902297973633,
+        "peak_kw": 1.563788652420044
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.11160752922296524,
+        "energy_kwh": 45.354888916015625,
+        "thermal_degree_hours": 0.3854619562625885,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.932334899902344,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.072784900665283,
+        "peak_kw": 1.5490975379943848
+      }
+    },
+    {
+      "config": {
+        "gain": 1.3,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.11147336661815643,
+        "energy_kwh": 45.32825469970703,
+        "thermal_degree_hours": 0.38463643193244934,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 46.93754577636719,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.0851409435272217,
+        "peak_kw": 1.551983118057251
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.09619273990392685,
+        "energy_kwh": 47.851531982421875,
+        "thermal_degree_hours": 0.10155238956212997,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.44797897338867,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.2056093215942383,
+        "peak_kw": 1.6729881763458252
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.0,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.0960029885172844,
+        "energy_kwh": 47.762657165527344,
+        "thermal_degree_hours": 0.10012047737836838,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.47401809692383,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.2328696250915527,
+        "peak_kw": 1.6692739725112915
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.09365259110927582,
+        "energy_kwh": 46.940826416015625,
+        "thermal_degree_hours": 0.08854547142982483,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.52610397338867,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.0833992958068848,
+        "peak_kw": 1.6615098714828491
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.0,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.09353092312812805,
+        "energy_kwh": 46.885284423828125,
+        "thermal_degree_hours": 0.08829957246780396,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.531314849853516,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.0918521881103516,
+        "peak_kw": 1.6604726314544678
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.09790979325771332,
+        "energy_kwh": 47.31925964355469,
+        "thermal_degree_hours": 0.11985237151384354,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.239646911621094,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.3949568271636963,
+        "peak_kw": 1.648472785949707
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.4,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.09778992086648941,
+        "energy_kwh": 47.263580322265625,
+        "thermal_degree_hours": 0.11848750710487366,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.255271911621094,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.4339170455932617,
+        "peak_kw": 1.6480095386505127
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.09550389647483826,
+        "energy_kwh": 46.48352813720703,
+        "thermal_degree_hours": 0.10592718422412872,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.302146911621094,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.285989999771118,
+        "peak_kw": 1.6400001049041748
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.4,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.09543091803789139,
+        "energy_kwh": 46.45073699951172,
+        "thermal_degree_hours": 0.10563495755195618,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.32818603515625,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.296003580093384,
+        "peak_kw": 1.6405971050262451
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.10682207345962524,
+        "energy_kwh": 47.29029083251953,
+        "thermal_degree_hours": 0.20309017598628998,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.072975158691406,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.676511764526367,
+        "peak_kw": 1.6682350635528564
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.75,
+        "co2_target": 850.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.1067735105752945,
+        "energy_kwh": 47.25944137573242,
+        "thermal_degree_hours": 0.20297491550445557,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.057350158691406,
+        "co2_compliant_hours": 51.395904541015625,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.7193655967712402,
+        "peak_kw": 1.6662342548370361
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 0.6
+      },
+      "validation": {
+        "cost": 0.10461640357971191,
+        "energy_kwh": 46.52099609375,
+        "thermal_degree_hours": 0.18887239694595337,
+        "co2_ppm_hours": 5.346652984619141,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.26568603515625,
+        "co2_compliant_hours": 48.69276428222656,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.573227643966675,
+        "peak_kw": 1.6560500860214233
+      }
+    },
+    {
+      "config": {
+        "gain": 2.0,
+        "offset": 0.75,
+        "co2_target": 950.0,
+        "vent_gain": 1.2
+      },
+      "validation": {
+        "cost": 0.10458287596702576,
+        "energy_kwh": 46.50480270385742,
+        "thermal_degree_hours": 0.18902143836021423,
+        "co2_ppm_hours": 0.028809018433094025,
+        "light_lux_hours": 1.0596381798677612e-06,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.250057220458984,
+        "co2_compliant_hours": 51.39069366455078,
+        "light_compliant_hours": 51.395904541015625,
+        "action_movement": 3.5849080085754395,
+        "peak_kw": 1.6556012630462646
+      }
+    }
+  ],
+  "protocol_sha256": "f3209259cba71a496b6e205709c56112b9212a3917aab946a7c3af37cc4820d0",
+  "validation_seeds": [
+    6000001,
+    6000002,
+    6000003,
+    6000004,
+    6000005,
+    6000006,
+    6000007,
+    6000008,
+    6000009,
+    6000010,
+    6000011,
+    6000012,
+    6000013,
+    6000014,
+    6000015,
+    6000016,
+    6000017,
+    6000018,
+    6000019,
+    6000020,
+    6000021,
+    6000022,
+    6000023,
+    6000024,
+    6000025,
+    6000026,
+    6000027,
+    6000028,
+    6000029,
+    6000030,
+    6000031,
+    6000032
+  ],
+  "selected_without_test": true
+}

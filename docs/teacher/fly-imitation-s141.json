@@ -1,0 +1,123 @@
+{
+  "id": "fly-imitation-s141",
+  "family": "fly-imitation",
+  "seed": 141,
+  "stage": "imitation",
+  "updates": 400,
+  "selected_update": 400,
+  "validation_cost": 0.1009584441781044,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 130.99403381347656,
+        "energy_kwh": 10.862607955932617,
+        "thermal_degree_hours": 124.36224365234375,
+        "co2_ppm_hours": 24.120452880859375,
+        "light_lux_hours": 1459.4796142578125,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 3.671874761581421,
+        "co2_compliant_hours": 49.0521354675293,
+        "light_compliant_hours": 20.791667938232422,
+        "action_movement": 0.39364784955978394,
+        "peak_kw": 0.3217562139034271
+      }
+    },
+    {
+      "update": 100,
+      "imitation_loss": 0.013689078390598297,
+      "validation": {
+        "cost": 0.39140239357948303,
+        "energy_kwh": 48.509681701660156,
+        "thermal_degree_hours": 0.45361804962158203,
+        "co2_ppm_hours": 2243.3388671875,
+        "light_lux_hours": 335.810791015625,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 47.24483871459961,
+        "co2_compliant_hours": 30.145835876464844,
+        "light_compliant_hours": 40.90104675292969,
+        "action_movement": 2.0257408618927,
+        "peak_kw": 1.464276909828186
+      }
+    },
+    {
+      "update": 200,
+      "imitation_loss": 0.008004110306501389,
+      "validation": {
+        "cost": 0.1515735387802124,
+        "energy_kwh": 48.849571228027344,
+        "thermal_degree_hours": 0.471233606338501,
+        "co2_ppm_hours": 327.3887939453125,
+        "light_lux_hours": 168.239990234375,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 47.005252838134766,
+        "co2_compliant_hours": 41.04690170288086,
+        "light_compliant_hours": 44.57294845581055,
+        "action_movement": 2.4150185585021973,
+        "peak_kw": 1.4906113147735596
+      }
+    },
+    {
+      "update": 300,
+      "imitation_loss": 0.00728630181401968,
+      "validation": {
+        "cost": 0.1128212958574295,
+        "energy_kwh": 47.922637939453125,
+        "thermal_degree_hours": 0.25701355934143066,
+        "co2_ppm_hours": 138.6056365966797,
+        "light_lux_hours": 97.9843521118164,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 48.86984634399414,
+        "co2_compliant_hours": 41.69273376464844,
+        "light_compliant_hours": 44.4114875793457,
+        "action_movement": 2.7623934745788574,
+        "peak_kw": 1.488034963607788
+      }
+    },
+    {
+      "update": 400,
+      "imitation_loss": 0.004350925330072641,
+      "validation": {
+        "cost": 0.1009584441781044,
+        "energy_kwh": 47.44514846801758,
+        "thermal_degree_hours": 0.1376124620437622,
+        "co2_ppm_hours": 75.7180404663086,
+        "light_lux_hours": 75.51042938232422,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.02610778808594,
+        "co2_compliant_hours": 42.906280517578125,
+        "light_compliant_hours": 44.22920227050781,
+        "action_movement": 2.9586236476898193,
+        "peak_kw": 1.5368263721466064
+      }
+    }
+  ],
+  "training_seconds": 2.809433124959469,
+  "supervised_pairs_presented": 204800,
+  "labelled_states": 27648,
+  "dataset_transitions": 27648,
+  "checkpoint": "checkpoints/teacher/fly-imitation-s141.pt",
+  "sha256": "53efc7ec32cfdbd4596b1ce6a2ff5da8fe006a94e9b3ff9a744ccb838bcc25a7",
+  "initial_checkpoint": "checkpoints/teacher/fly-initial-s141.pt",
+  "initial_sha256": "fb987e250f3d0550c08b7818edd23baf730265c32b08f0e51c31e8777e290262",
+  "stats": {
+    "width": 32,
+    "seed": 141,
+    "topology": "fly",
+    "hub": true,
+    "copies": 2,
+    "source_cells_per_spoke": 32,
+    "spoke_units": 256,
+    "hub_units": 16,
+    "source_unique_ids": 32,
+    "recurrent_edges": 4952,
+    "allocated_parameters": 23833,
+    "edge_adjusted_parameters": 20593,
+    "modules": 8,
+    "graph": {
+      "accepted_swaps": 0,
+      "different_edges": 0
+    },
+    "lineage": []
+  }
+}

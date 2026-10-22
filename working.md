@@ -53,3 +53,22 @@ Study-2 training sealed: 15 selected stage checkpoints plus six initial models,
 1,228,800 supervised pair presentations. Three fresh seeds. Fixed primary family:
 fly-teacher-reward; representative seed 141 by median validation rank. Tuned
 teacher validation cost 0.09353. Commit the selection before final evaluation.
+
+## Completed extension evidence
+
+Teacher-guided training improves cost 7.45% against reward-only and 10.05% against
+imitation-only on 100 fresh final scenarios. It does not outperform the tuned
+conventional teacher: 1.34% higher mean cost (interval spans zero), 8.76% lower
+electricity but lower temperature/CO2/light compliance. Registered superiority
+gates failed; publish that result, without changing the trained models or reward.
+
+Readback passed for all 15 selected and six initial extension models, exact
+save/reload, all 1,700 normal policy episodes, nine CSV comparison intervals and
+two independent NumPy traces (576 steps). Original 48 checkpoints and 180 primary
+episodes still pass. 30 tests pass. Neutral UI/report and actual 72-second
+held-out video completed, verified and integrated with portable website entry.
+
+Next release gates: finish browser download/readback, regenerate final artifacts,
+commit/push and verify CI for the public revision. Next research direction:
+explicit comfort/air constraints, plant identification and calibrated external
+building evaluation; no claim of conventional-controller superiority yet.

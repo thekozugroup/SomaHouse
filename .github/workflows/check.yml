@@ -18,3 +18,5 @@ jobs:
         run: python -m pytest -q
       - name: Replay immutable study artifacts
         run: python -m somahouse.verify --portable
+      - name: Replay teacher study
+        run: python -m somahouse.teacher_verify --portable
