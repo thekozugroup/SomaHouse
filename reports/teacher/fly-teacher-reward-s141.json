@@ -1,0 +1,188 @@
+{
+  "id": "fly-teacher-reward-s141",
+  "family": "fly-teacher-reward",
+  "seed": 141,
+  "stage": "reward",
+  "updates": 800,
+  "selected_update": 500,
+  "validation_cost": 0.09660449624061584,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 0.1009584441781044,
+        "energy_kwh": 47.44514846801758,
+        "thermal_degree_hours": 0.1376124620437622,
+        "co2_ppm_hours": 75.7180404663086,
+        "light_lux_hours": 75.51042938232422,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.02610778808594,
+        "co2_compliant_hours": 42.906280517578125,
+        "light_compliant_hours": 44.22920227050781,
+        "action_movement": 2.9586236476898193,
+        "peak_kw": 1.5368263721466064
+      }
+    },
+    {
+      "update": 100,
+      "training_objective": 0.11037834733724594,
+      "validation": {
+        "cost": 0.09745243191719055,
+        "energy_kwh": 45.81380081176758,
+        "thermal_degree_hours": 0.18573518097400665,
+        "co2_ppm_hours": 12.468966484069824,
+        "light_lux_hours": 4.359748840332031,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.72401809692383,
+        "co2_compliant_hours": 49.95319366455078,
+        "light_compliant_hours": 50.71360778808594,
+        "action_movement": 3.55014705657959,
+        "peak_kw": 1.5302659273147583
+      }
+    },
+    {
+      "update": 200,
+      "training_objective": 0.11005815863609314,
+      "validation": {
+        "cost": 0.10976774990558624,
+        "energy_kwh": 43.58633041381836,
+        "thermal_degree_hours": 0.32951340079307556,
+        "co2_ppm_hours": 26.603099822998047,
+        "light_lux_hours": 8.523713111877441,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.010475158691406,
+        "co2_compliant_hours": 47.9115104675293,
+        "light_compliant_hours": 49.44276428222656,
+        "action_movement": 3.6156816482543945,
+        "peak_kw": 1.4920071363449097
+      }
+    },
+    {
+      "update": 300,
+      "training_objective": 0.1084224060177803,
+      "validation": {
+        "cost": 0.09757521748542786,
+        "energy_kwh": 44.112918853759766,
+        "thermal_degree_hours": 0.17328914999961853,
+        "co2_ppm_hours": 45.997283935546875,
+        "light_lux_hours": 1.862686276435852,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.958396911621094,
+        "co2_compliant_hours": 47.65109634399414,
+        "light_compliant_hours": 51.0729866027832,
+        "action_movement": 3.696406841278076,
+        "peak_kw": 1.551196575164795
+      }
+    },
+    {
+      "update": 400,
+      "training_objective": 0.10439843684434891,
+      "validation": {
+        "cost": 0.10084845870733261,
+        "energy_kwh": 43.32818603515625,
+        "thermal_degree_hours": 0.2161625474691391,
+        "co2_ppm_hours": 22.680456161499023,
+        "light_lux_hours": 2.800705909729004,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.776100158691406,
+        "co2_compliant_hours": 48.203182220458984,
+        "light_compliant_hours": 51.0261116027832,
+        "action_movement": 3.806990623474121,
+        "peak_kw": 1.533566951751709
+      }
+    },
+    {
+      "update": 500,
+      "training_objective": 0.09618142247200012,
+      "validation": {
+        "cost": 0.09660449624061584,
+        "energy_kwh": 43.090904235839844,
+        "thermal_degree_hours": 0.18631160259246826,
+        "co2_ppm_hours": 18.63353729248047,
+        "light_lux_hours": 3.3126776218414307,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.802146911621094,
+        "co2_compliant_hours": 48.78651428222656,
+        "light_compliant_hours": 51.19277572631836,
+        "action_movement": 3.8632240295410156,
+        "peak_kw": 1.5746734142303467
+      }
+    },
+    {
+      "update": 600,
+      "training_objective": 0.11650963127613068,
+      "validation": {
+        "cost": 0.09871969372034073,
+        "energy_kwh": 42.79631042480469,
+        "thermal_degree_hours": 0.21017007529735565,
+        "co2_ppm_hours": 16.078554153442383,
+        "light_lux_hours": 5.930220603942871,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.14588928222656,
+        "co2_compliant_hours": 49.17713928222656,
+        "light_compliant_hours": 51.130279541015625,
+        "action_movement": 3.9654793739318848,
+        "peak_kw": 1.5952231884002686
+      }
+    },
+    {
+      "update": 700,
+      "training_objective": 0.09343289583921432,
+      "validation": {
+        "cost": 0.09899060428142548,
+        "energy_kwh": 42.76947784423828,
+        "thermal_degree_hours": 0.19341905415058136,
+        "co2_ppm_hours": 17.611209869384766,
+        "light_lux_hours": 3.5373239517211914,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.59901428222656,
+        "co2_compliant_hours": 48.53130340576172,
+        "light_compliant_hours": 51.04694366455078,
+        "action_movement": 3.9746129512786865,
+        "peak_kw": 1.6092497110366821
+      }
+    },
+    {
+      "update": 800,
+      "training_objective": 0.11421548575162888,
+      "validation": {
+        "cost": 0.10342101752758026,
+        "energy_kwh": 42.056480407714844,
+        "thermal_degree_hours": 0.2276538908481598,
+        "co2_ppm_hours": 10.02039909362793,
+        "light_lux_hours": 3.8890552520751953,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.20838928222656,
+        "co2_compliant_hours": 49.71360397338867,
+        "light_compliant_hours": 50.95840072631836,
+        "action_movement": 4.051965713500977,
+        "peak_kw": 1.595637559890747
+      }
+    }
+  ],
+  "training_seconds": 82.79725379217416,
+  "training_transitions": 1228800,
+  "parent_checkpoint": "checkpoints/teacher/fly-imitation-s141.pt",
+  "checkpoint": "checkpoints/teacher/fly-teacher-reward-s141.pt",
+  "sha256": "ddae080670553e29ffbf491dbe0a81250831df72a21c0ed76bd37238a86d4866",
+  "stats": {
+    "width": 32,
+    "seed": 141,
+    "topology": "fly",
+    "hub": true,
+    "copies": 2,
+    "source_cells_per_spoke": 32,
+    "spoke_units": 256,
+    "hub_units": 16,
+    "source_unique_ids": 32,
+    "recurrent_edges": 4952,
+    "allocated_parameters": 23833,
+    "edge_adjusted_parameters": 20593,
+    "modules": 8,
+    "graph": {
+      "accepted_swaps": 0,
+      "different_edges": 0
+    },
+    "lineage": []
+  }
+}

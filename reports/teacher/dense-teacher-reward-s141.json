@@ -1,0 +1,188 @@
+{
+  "id": "dense-teacher-reward-s141",
+  "family": "dense-teacher-reward",
+  "seed": 141,
+  "stage": "reward",
+  "updates": 800,
+  "selected_update": 100,
+  "validation_cost": 0.09607063233852386,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 0.10064338892698288,
+        "energy_kwh": 47.472198486328125,
+        "thermal_degree_hours": 0.14159861207008362,
+        "co2_ppm_hours": 46.50687789916992,
+        "light_lux_hours": 82.56866455078125,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.947975158691406,
+        "co2_compliant_hours": 45.69795227050781,
+        "light_compliant_hours": 44.01565170288086,
+        "action_movement": 2.987921714782715,
+        "peak_kw": 1.5370314121246338
+      }
+    },
+    {
+      "update": 100,
+      "training_objective": 0.10658246278762817,
+      "validation": {
+        "cost": 0.09607063233852386,
+        "energy_kwh": 45.42793273925781,
+        "thermal_degree_hours": 0.1720830500125885,
+        "co2_ppm_hours": 12.143709182739258,
+        "light_lux_hours": 4.424498558044434,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.89068603515625,
+        "co2_compliant_hours": 49.35943603515625,
+        "light_compliant_hours": 50.802146911621094,
+        "action_movement": 3.544027328491211,
+        "peak_kw": 1.5112427473068237
+      }
+    },
+    {
+      "update": 200,
+      "training_objective": 0.10431774705648422,
+      "validation": {
+        "cost": 0.11196359992027283,
+        "energy_kwh": 43.56101608276367,
+        "thermal_degree_hours": 0.34688445925712585,
+        "co2_ppm_hours": 11.837014198303223,
+        "light_lux_hours": 4.772252082824707,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.01567840576172,
+        "co2_compliant_hours": 49.52089309692383,
+        "light_compliant_hours": 50.411521911621094,
+        "action_movement": 3.7207319736480713,
+        "peak_kw": 1.5224376916885376
+      }
+    },
+    {
+      "update": 300,
+      "training_objective": 0.10771004110574722,
+      "validation": {
+        "cost": 0.09825500845909119,
+        "energy_kwh": 44.106712341308594,
+        "thermal_degree_hours": 0.17069615423679352,
+        "co2_ppm_hours": 37.856536865234375,
+        "light_lux_hours": 6.736258506774902,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 50.00006103515625,
+        "co2_compliant_hours": 46.9271354675293,
+        "light_compliant_hours": 50.29694366455078,
+        "action_movement": 3.79960036277771,
+        "peak_kw": 1.5594974756240845
+      }
+    },
+    {
+      "update": 400,
+      "training_objective": 0.10277950018644333,
+      "validation": {
+        "cost": 0.10317189991474152,
+        "energy_kwh": 43.157684326171875,
+        "thermal_degree_hours": 0.23837393522262573,
+        "co2_ppm_hours": 30.12566375732422,
+        "light_lux_hours": 3.560638904571533,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.713600158691406,
+        "co2_compliant_hours": 47.45838165283203,
+        "light_compliant_hours": 50.71360778808594,
+        "action_movement": 3.9160757064819336,
+        "peak_kw": 1.571368932723999
+      }
+    },
+    {
+      "update": 500,
+      "training_objective": 0.09455536305904388,
+      "validation": {
+        "cost": 0.09728546440601349,
+        "energy_kwh": 42.87417984008789,
+        "thermal_degree_hours": 0.20252975821495056,
+        "co2_ppm_hours": 20.557979583740234,
+        "light_lux_hours": 4.439058303833008,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.713600158691406,
+        "co2_compliant_hours": 48.166725158691406,
+        "light_compliant_hours": 50.82298278808594,
+        "action_movement": 3.9611611366271973,
+        "peak_kw": 1.6049580574035645
+      }
+    },
+    {
+      "update": 600,
+      "training_objective": 0.11454132199287415,
+      "validation": {
+        "cost": 0.09900235384702682,
+        "energy_kwh": 42.34368896484375,
+        "thermal_degree_hours": 0.22332702577114105,
+        "co2_ppm_hours": 23.74381446838379,
+        "light_lux_hours": 2.6419506072998047,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.15631103515625,
+        "co2_compliant_hours": 48.390682220458984,
+        "light_compliant_hours": 50.97923278808594,
+        "action_movement": 4.077569484710693,
+        "peak_kw": 1.6059238910675049
+      }
+    },
+    {
+      "update": 700,
+      "training_objective": 0.09253634512424469,
+      "validation": {
+        "cost": 0.1031249463558197,
+        "energy_kwh": 42.37933349609375,
+        "thermal_degree_hours": 0.22486989200115204,
+        "co2_ppm_hours": 14.786432266235352,
+        "light_lux_hours": 6.298156261444092,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.510475158691406,
+        "co2_compliant_hours": 48.307342529296875,
+        "light_compliant_hours": 50.82298278808594,
+        "action_movement": 4.087976455688477,
+        "peak_kw": 1.6146440505981445
+      }
+    },
+    {
+      "update": 800,
+      "training_objective": 0.11012309044599533,
+      "validation": {
+        "cost": 0.10609476268291473,
+        "energy_kwh": 41.63280487060547,
+        "thermal_degree_hours": 0.26204627752304077,
+        "co2_ppm_hours": 27.72225570678711,
+        "light_lux_hours": 4.0775604248046875,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 48.97401428222656,
+        "co2_compliant_hours": 47.510467529296875,
+        "light_compliant_hours": 50.97402572631836,
+        "action_movement": 4.239473342895508,
+        "peak_kw": 1.6188793182373047
+      }
+    }
+  ],
+  "training_seconds": 82.84504312556237,
+  "training_transitions": 1228800,
+  "parent_checkpoint": "checkpoints/teacher/dense-imitation-s141.pt",
+  "checkpoint": "checkpoints/teacher/dense-teacher-reward-s141.pt",
+  "sha256": "08f9ef553c7b686e00a4702e247df258910755d40af91f18d1aa8657c7a9136e",
+  "stats": {
+    "width": 32,
+    "seed": 141,
+    "topology": "dense",
+    "hub": true,
+    "copies": 2,
+    "source_cells_per_spoke": 32,
+    "spoke_units": 256,
+    "hub_units": 16,
+    "source_unique_ids": 32,
+    "recurrent_edges": 7936,
+    "allocated_parameters": 23833,
+    "edge_adjusted_parameters": 23577,
+    "modules": 8,
+    "graph": {
+      "accepted_swaps": 0,
+      "different_edges": 373
+    },
+    "lineage": []
+  }
+}

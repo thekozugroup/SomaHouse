@@ -11,7 +11,7 @@ Active goal: build and train a modular fly-derived controller for a simulated ho
 - [x] Frozen selection followed by held-out scenarios and robustness evaluation.
 - [x] Independent artifact readback and repeatable tests.
 - [x] Working interactive house and brain inspector, full report/case study.
-- [ ] Verified commit; FlyFi remains unchanged.
+- [x] Study-1 public commit, remote CI and unchanged FlyFi verified.
 
 Decision: duplication must earn its complexity. Prefer a smaller useful source circuit when extra copies do not improve held-out control.
 
@@ -45,3 +45,11 @@ video, then publish the extended evidence. No guaranteed winning conclusion.
 
 Study-1 public repository and exact-state CI passed:
 https://github.com/thekozugroup/SomaHouse/actions/runs/39794524213
+
+Progress: neutral grayscale UI and chart styles implemented; telemetry preview rendered and fully decoded (H.264, 1280×720, 24 fps, 72 seconds). Browser playback reached the end without media errors. All 288 saved-model decisions replay exactly. Study 2 is training under the registered budget; final test remains unopened. Preliminary validation does not establish superiority over the tuned teacher.
+
+Study-2 training sealed: 15 selected stage checkpoints plus six initial models,
+10,800 updates, 12,902,400 reward transitions, 165,888 data-collection transitions,
+1,228,800 supervised pair presentations. Three fresh seeds. Fixed primary family:
+fly-teacher-reward; representative seed 141 by median validation rank. Tuned
+teacher validation cost 0.09353. Commit the selection before final evaluation.

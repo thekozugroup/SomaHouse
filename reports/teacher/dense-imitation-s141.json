@@ -1,0 +1,123 @@
+{
+  "id": "dense-imitation-s141",
+  "family": "dense-imitation",
+  "seed": 141,
+  "stage": "imitation",
+  "updates": 400,
+  "selected_update": 400,
+  "validation_cost": 0.10064338892698288,
+  "curve": [
+    {
+      "update": 0,
+      "validation": {
+        "cost": 127.04438018798828,
+        "energy_kwh": 10.210506439208984,
+        "thermal_degree_hours": 122.5035400390625,
+        "co2_ppm_hours": 22.92770767211914,
+        "light_lux_hours": 1458.442626953125,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 3.6510415077209473,
+        "co2_compliant_hours": 49.26047134399414,
+        "light_compliant_hours": 20.796876907348633,
+        "action_movement": 0.390205442905426,
+        "peak_kw": 0.3036775290966034
+      }
+    },
+    {
+      "update": 100,
+      "imitation_loss": 0.013289972208440304,
+      "validation": {
+        "cost": 0.2385411411523819,
+        "energy_kwh": 48.76361846923828,
+        "thermal_degree_hours": 0.4567709267139435,
+        "co2_ppm_hours": 1274.15283203125,
+        "light_lux_hours": 319.63818359375,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 47.32296371459961,
+        "co2_compliant_hours": 33.171878814697266,
+        "light_compliant_hours": 41.34375762939453,
+        "action_movement": 2.041055917739868,
+        "peak_kw": 1.4688817262649536
+      }
+    },
+    {
+      "update": 200,
+      "imitation_loss": 0.007760793901979923,
+      "validation": {
+        "cost": 0.1493309736251831,
+        "energy_kwh": 48.94390106201172,
+        "thermal_degree_hours": 0.4587738513946533,
+        "co2_ppm_hours": 318.0284423828125,
+        "light_lux_hours": 163.04095458984375,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 47.25525665283203,
+        "co2_compliant_hours": 41.41148376464844,
+        "light_compliant_hours": 44.6458625793457,
+        "action_movement": 2.464095115661621,
+        "peak_kw": 1.486149787902832
+      }
+    },
+    {
+      "update": 300,
+      "imitation_loss": 0.006848055869340897,
+      "validation": {
+        "cost": 0.10890844464302063,
+        "energy_kwh": 47.93486785888672,
+        "thermal_degree_hours": 0.22514629364013672,
+        "co2_ppm_hours": 86.9304428100586,
+        "light_lux_hours": 97.23788452148438,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.17714309692383,
+        "co2_compliant_hours": 43.58857345581055,
+        "light_compliant_hours": 42.80731201171875,
+        "action_movement": 2.762545108795166,
+        "peak_kw": 1.5005614757537842
+      }
+    },
+    {
+      "update": 400,
+      "imitation_loss": 0.0038844160735607147,
+      "validation": {
+        "cost": 0.10064338892698288,
+        "energy_kwh": 47.472198486328125,
+        "thermal_degree_hours": 0.14159861207008362,
+        "co2_ppm_hours": 46.50687789916992,
+        "light_lux_hours": 82.56866455078125,
+        "occupied_zone_hours": 51.395904541015625,
+        "thermal_compliant_hours": 49.947975158691406,
+        "co2_compliant_hours": 45.69795227050781,
+        "light_compliant_hours": 44.01565170288086,
+        "action_movement": 2.987921714782715,
+        "peak_kw": 1.5370314121246338
+      }
+    }
+  ],
+  "training_seconds": 2.669664208777249,
+  "supervised_pairs_presented": 204800,
+  "labelled_states": 27648,
+  "dataset_transitions": 27648,
+  "checkpoint": "checkpoints/teacher/dense-imitation-s141.pt",
+  "sha256": "496e51665f5c9b2b2dfae1b228e1f5fa0d3563638f559b8b50dfe11f0170ec22",
+  "initial_checkpoint": "checkpoints/teacher/dense-initial-s141.pt",
+  "initial_sha256": "6bfb3f553bcfecdb2496f20cd2729f2e96cd854dbb6f94a9a87813b888f12590",
+  "stats": {
+    "width": 32,
+    "seed": 141,
+    "topology": "dense",
+    "hub": true,
+    "copies": 2,
+    "source_cells_per_spoke": 32,
+    "spoke_units": 256,
+    "hub_units": 16,
+    "source_unique_ids": 32,
+    "recurrent_edges": 7936,
+    "allocated_parameters": 23833,
+    "edge_adjusted_parameters": 23577,
+    "modules": 8,
+    "graph": {
+      "accepted_swaps": 0,
+      "different_edges": 373
+    },
+    "lineage": []
+  }
+}
