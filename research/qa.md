@@ -48,3 +48,5 @@ No home equipment connected. No real building or weather calibration. No tuning 
 - Downloaded study-2 checkpoint fingerprint equals the saved model: ddae080670553e29ffbf491dbe0a81250831df72a21c0ed76bd37238a86d4866.
 - Study-2 video played to 72 seconds / ended without browser media error. All five case-study images and portable video loaded. Browser console has no errors/warnings in the checked house tab.
 - Complete ZIP integrity checked: all 69 checkpoint files, both protocols, study evidence, video and source included.
+- Published implementation a2ea42f passed remote GitHub CI, including both independent replay jobs: https://github.com/thekozugroup/SomaHouse/actions/runs/39799796823.
+- Final 190-file manifest and all figure/poster grayscale pixels checked. FlyFi tree remains clean at 557a60da33bc33b4882be2a9d7abe880e808b823.

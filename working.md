@@ -1,74 +1,67 @@
 # SomaHouse
 
-Active goal: build and train a modular fly-derived controller for a simulated house, with rigorous comparisons and a portfolio case study. This is a separate repository from FlyFi.
+Status: both registered simulation studies completed, verified and published.
+Public repository: https://github.com/thekozugroup/SomaHouse
+Image-compression work remains isolated and unchanged in FlyFi.
 
-## Acceptance gates
+## Completed
 
-- [x] Separate repository and frozen study protocol.
-- [x] Tested heat/CO2/daylight simulator and constrained actions (16 tests).
-- [x] Real hub-and-spoke architecture with source provenance.
-- [x] Three-seed training, conventional/rewired controls, pruning and duplication.
-- [x] Frozen selection followed by held-out scenarios and robustness evaluation.
-- [x] Independent artifact readback and repeatable tests.
-- [x] Working interactive house and brain inspector, full report/case study.
-- [x] Study-1 public commit, remote CI and unchanged FlyFi verified.
+- Three-room heat/CO2/daylight simulator; constrained HVAC, ventilation and lights.
+- Actual MaleCNS-derived private recurrent masks; engineered hub-and-spoke messaging.
+- Study 1: 24 candidates, three seeds, 5,850 updates, 3,369,600 training transitions.
+- Matched extra-training, physical pruning, duplication, rewired/dense and no-hub controls.
+- Study 2: teacher imitation, reward refinement, reward-only and dense controls;
+  15 selected stage checkpoints, six initial models and three fresh training seeds.
+- Study-2 budget: 10,800 updates, 12,902,400 reward transitions, 165,888
+  data-collection transitions and 1,228,800 supervised pair presentations.
+- Original scores/checkpoints preserved. Study-2 plan committed at 89a8294;
+  selected models sealed at 9bfad28 before opening fresh final tests.
+- New final set: 100 normal scenarios plus four shifts of 24 paired scenarios.
+  3,332 evaluated policy episodes / 959,616 evaluation transitions.
+- Standalone trained-model house lab, source/weight inspector, both full reports,
+  first-person case study, downloadable checkpoints and portable docs/ entry.
+- Neutral white/charcoal/gray throughout. Room lines use solid/dashed/dotted styles.
+- Actual held-out video: house left, brain right, action feed below. Study-2 seed
+  141, scenario 7000001, 288 decisions checked exactly against the stored trace.
+  48 simulated hours / 72 seconds, explicitly labeled 2,400× simulation speed.
+  H.264, 1280×720, 24 fps; full decode and browser playback to the end passed.
 
-Decision: duplication must earn its complexity. Prefer a smaller useful source circuit when extra copies do not improve held-out control.
+## Findings
 
-Training: direct gradients through the custom simulator; no imitation and no claim of model-free RL. See research/protocol.md for budgets and boundaries.
+Study 1: duplication reduced held-out cost 4.07% against equal-extra-training
+continue, paired 95% interval [-0.00797, -0.00289] on cost difference. Physical
+pruning hurt. The conventional reference remained stronger on energy/comfort;
+dense wiring beat the same-size fly-derived base.
 
-Training complete: 24 candidates, 5,850 updates, 3,369,600 simulated transitions. Validation-selected family: duplicate, mean cost 0.11644, versus equal-extra-training continue 0.12101. Copies improved validation in all three seeds. This is provisional evidence; no test result has been viewed yet. Primary selection is sealed in reports/selection.json. Smaller physically cut controllers were trained and retained for comparison.
+Study 2: teacher-guided reward training reduced cost 7.45% against reward-only
+and 10.05% against imitation-only. It did not pass the registered superiority
+claim against the tuned conventional teacher: 1.34% higher mean cost, paired
+interval spanning zero; 8.76% less electricity with worse temperature/CO2/light
+compliance. No special biological-wiring advantage or real-home readiness shown.
+Compare controllers within each study; their final scenario cohorts differ.
 
-User authorized a new public GitHub repository named SomaHouse. Publish only after checks and artifact verification. GitHub authenticated owner: thekozugroup. FlyFi working tree remains clean.
+## Verification and publication
 
-## Results and verification
+- 30 unit/API/artifact tests passed on the committed implementation.
+- All 69 initial/selected checkpoint files included and verified.
+- Original 180 selected-family episodes and all 1,700 new normal policy episodes
+  replayed exactly on the training CPU; exact save/reload and learned recurrence.
+- Six complete traces / 1,728 physical steps independently integrated with NumPy.
+- All nine new paired comparisons independently recomputed from episode CSV.
+- 190 artifact manifest files match. ZIP integrity checked with all checkpoints,
+  both protocols, reports, source and video. All figure/poster pixels are grayscale.
+- Browser checked newest model advancement, tuned teacher, styles, inspector,
+  correct selection link, downloaded checkpoint fingerprint, portable entry,
+  loaded figures and completed video. No checked house console/media errors.
+- Browser screenshot capture unavailable; no narrow-screen visual proof claimed.
+- Published implementation a2ea42f passed GitHub CI, including both replay jobs:
+  https://github.com/thekozugroup/SomaHouse/actions/runs/39799796823
+- Commits/push use thekozugroup <thekozugroup@gmail.com>; no AI coauthor tags.
 
-- 3,720 evaluated policy episodes, 1,071,360 transitions; 60 normal test seeds and 16 stress seeds reused across four shifts.
-- Duplication improves test cost 4.07% against equal-extra-training continue: difference -0.00510, paired scenario 95% interval [-0.00797, -0.00289]. All three validation seeds improved before selection.
-- Selected circuit: eight 32-cell spokes, 16-unit hub, 32 unique source IDs, 23,833 allocated parameters. The pruned circuit physically has four 16-cell spokes and 5,337 parameters.
-- Conventional balance control remains stronger on normal energy and target compliance. Learned model uses 7.7% more energy (25.32 versus 23.52 kWh/day), with 92.7% temperature and 91.0% CO2 compliance. Dense wiring beats the same-size base fly circuit. No special biological advantage established.
-- Severe weather, temperature bias, CO2 dropout and capacity reduction reveal major failures. No physical deployment or hard safety guarantees.
-- All 48 checkpoints read back, recurrent weights changed, save/reload actions exact; all 180 selected normal episodes replayed exactly on training hardware. Independent NumPy replay: four full traces / 1,152 steps.
-- 24 local tests passed. A regression test catches first-message leakage during spoke lesions. Corrected validation lesions only; primary/stress scores, selection and trained weights preserved. Correction hash is in results.json.
-- Browser tested run/pause, advancement, gathering, target change, controller switching, hub disconnection, pruned inspection, module switching and real checkpoint download. Download hash matches the stored checkpoint. PNG charts visually inspected. Browser screenshot capture is unavailable; no narrow-screen visual claim is made.
-- Full detailed report (~3,400 words), first-person case study, six figures, portable docs/ website entry and complete study bundle generated.
+## Next research
 
-Next gates: final committed-state tests, public repository creation/push, remote CI verification and final clean-tree check. Future research requires new held-out seeds; target constrained control and calibrated building validation.
-
-## Study 2 extension (requested after study 1)
-
-Teacher-guided imitation followed by reward refinement, a tuned conventional
-reference, reward-only and dense controls, three new training seeds and fresh
-final scenarios. Frozen in research/teacher-protocol.md before training. Original
-results remain unchanged. Finish neutral colors and a telemetry-derived preview
-video, then publish the extended evidence. No guaranteed winning conclusion.
-
-Study-1 public repository and exact-state CI passed:
-https://github.com/thekozugroup/SomaHouse/actions/runs/39794524213
-
-Progress: neutral grayscale UI and chart styles implemented; telemetry preview rendered and fully decoded (H.264, 1280×720, 24 fps, 72 seconds). Browser playback reached the end without media errors. All 288 saved-model decisions replay exactly. Study 2 is training under the registered budget; final test remains unopened. Preliminary validation does not establish superiority over the tuned teacher.
-
-Study-2 training sealed: 15 selected stage checkpoints plus six initial models,
-10,800 updates, 12,902,400 reward transitions, 165,888 data-collection transitions,
-1,228,800 supervised pair presentations. Three fresh seeds. Fixed primary family:
-fly-teacher-reward; representative seed 141 by median validation rank. Tuned
-teacher validation cost 0.09353. Commit the selection before final evaluation.
-
-## Completed extension evidence
-
-Teacher-guided training improves cost 7.45% against reward-only and 10.05% against
-imitation-only on 100 fresh final scenarios. It does not outperform the tuned
-conventional teacher: 1.34% higher mean cost (interval spans zero), 8.76% lower
-electricity but lower temperature/CO2/light compliance. Registered superiority
-gates failed; publish that result, without changing the trained models or reward.
-
-Readback passed for all 15 selected and six initial extension models, exact
-save/reload, all 1,700 normal policy episodes, nine CSV comparison intervals and
-two independent NumPy traces (576 steps). Original 48 checkpoints and 180 primary
-episodes still pass. 30 tests pass. Neutral UI/report and actual 72-second
-held-out video completed, verified and integrated with portable website entry.
-
-Next release gates: finish browser download/readback, regenerate final artifacts,
-commit/push and verify CI for the public revision. Next research direction:
-explicit comfort/air constraints, plant identification and calibrated external
-building evaluation; no claim of conventional-controller superiority yet.
+Register a new study with explicit comfort/air constraints and compare energy at
+matched service levels. Improve plant identification and test a calibrated
+external building model. Keep current final tests sealed from further tuning.
+The portable website entry is ready for integration; the personal site has not
+been modified or deployed by this project. Page interactions use fixed weights.
