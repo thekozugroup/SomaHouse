@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "somahouse"
+version = "0.1.0"
+description = "A fly-connectome-derived controller learns to regulate a simulated home"
+requires-python = ">=3.11,<3.13"
+dependencies = ["numpy==1.26.4", "torch==2.10.0", "fastapi==0.115.12", "uvicorn==0.34.2", "matplotlib==3.10.8"]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.2", "httpx==0.27.2"]
+
+[tool.setuptools.packages.find]
+include = ["somahouse*"]
+
+[tool.setuptools.package-data]
+somahouse = ["static/*", "static/fonts/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

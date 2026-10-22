@@ -1,0 +1,6180 @@
+{
+  "dataset": "MaleCNS v1.0",
+  "license": "CC-BY-4.0",
+  "attribution": "FlyEM (HHMI Janelia), University of Cambridge, MRC LMB, and Google Research",
+  "source_page": "https://male-cns.janelia.org/download/",
+  "sources": {
+    "annotations": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "bytes": 14483314
+    },
+    "neurotransmitters": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "bytes": 43282834
+    },
+    "weights": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "bytes": 1051241946
+    }
+  },
+  "pool_classes": [
+    "Kenyon_Cell",
+    "MBON",
+    "DAN",
+    "ALPN",
+    "ALLN",
+    "APL type"
+  ],
+  "pool_nodes": 5609,
+  "pool_edges": 1174444,
+  "extraction": "Nested greedy connected growth, attachment/sqrt(total weighted degree); self-edges removed.",
+  "seed_nodes": 512,
+  "seed_edges": 95227,
+  "seed_sha256": "68b42e0497e3679116d7f4348c0e3656fa560f87273c96b7b3797cf97115f0ab",
+  "nodes": [
+    {
+      "body_id": 10540,
+      "type": "APL",
+      "class": null,
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        23999,
+        23161,
+        26698
+      ]
+    },
+    {
+      "body_id": 18540,
+      "type": "KCg-s1",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36299,
+        18928,
+        36356
+      ]
+    },
+    {
+      "body_id": 519371,
+      "type": "MBON05",
+      "class": "MBON",
+      "side": "L",
+      "neurotransmitter": "glutamate",
+      "position": [
+        61401,
+        19875,
+        16294
+      ]
+    },
+    {
+      "body_id": 515015,
+      "type": "MBON30",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "glutamate",
+      "position": [
+        33784,
+        20537,
+        16820
+      ]
+    },
+    {
+      "body_id": 11402,
+      "type": "MBON11",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        40844,
+        19420,
+        13396
+      ]
+    },
+    {
+      "body_id": 11327,
+      "type": "PPL101",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        33705,
+        14310,
+        33911
+      ]
+    },
+    {
+      "body_id": 11900,
+      "type": "PPL101",
+      "class": "DAN",
+      "side": "L",
+      "neurotransmitter": "dopamine",
+      "position": [
+        62416,
+        15588,
+        33585
+      ]
+    },
+    {
+      "body_id": 10704,
+      "type": "MBON11",
+      "class": "MBON",
+      "side": "L",
+      "neurotransmitter": "gaba",
+      "position": [
+        55954,
+        18437,
+        11939
+      ]
+    },
+    {
+      "body_id": 523987,
+      "type": "MBON29",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34584,
+        21588,
+        35186
+      ]
+    },
+    {
+      "body_id": 519619,
+      "type": "MBON29",
+      "class": "MBON",
+      "side": "L",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        63571,
+        21744,
+        34373
+      ]
+    },
+    {
+      "body_id": 25030,
+      "type": "KCg-s2",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35921,
+        10095,
+        32174
+      ]
+    },
+    {
+      "body_id": 36723,
+      "type": "KCg-d",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36119,
+        10570,
+        32342
+      ]
+    },
+    {
+      "body_id": 11618,
+      "type": "PPL102",
+      "class": "DAN",
+      "side": "L",
+      "neurotransmitter": "dopamine",
+      "position": [
+        62800,
+        14450,
+        33394
+      ]
+    },
+    {
+      "body_id": 43876,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35782,
+        11514,
+        35826
+      ]
+    },
+    {
+      "body_id": 24959,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40425,
+        14202,
+        36588
+      ]
+    },
+    {
+      "body_id": 65427,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32864,
+        10958,
+        35036
+      ]
+    },
+    {
+      "body_id": 10804,
+      "type": "MBON20",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        38003,
+        36673,
+        17537
+      ]
+    },
+    {
+      "body_id": 87077,
+      "type": "MBON25",
+      "class": "MBON",
+      "side": "L",
+      "neurotransmitter": "glutamate",
+      "position": [
+        49705,
+        7345,
+        17013
+      ]
+    },
+    {
+      "body_id": 14292,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        29818,
+        11254,
+        33920
+      ]
+    },
+    {
+      "body_id": 160878,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35706,
+        9096,
+        32966
+      ]
+    },
+    {
+      "body_id": 132230,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35036,
+        10654,
+        35212
+      ]
+    },
+    {
+      "body_id": 78251,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30360,
+        11097,
+        33974
+      ]
+    },
+    {
+      "body_id": 47446,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34302,
+        8063,
+        33336
+      ]
+    },
+    {
+      "body_id": 82440,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33440,
+        8598,
+        33396
+      ]
+    },
+    {
+      "body_id": 67774,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34233,
+        9385,
+        34200
+      ]
+    },
+    {
+      "body_id": 44940,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31980,
+        11687,
+        34889
+      ]
+    },
+    {
+      "body_id": 49805,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32195,
+        13299,
+        34947
+      ]
+    },
+    {
+      "body_id": 44766,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33050,
+        9246,
+        33386
+      ]
+    },
+    {
+      "body_id": 10013,
+      "type": "MBON01",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "glutamate",
+      "position": [
+        47491,
+        8285,
+        17919
+      ]
+    },
+    {
+      "body_id": 66595,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31677,
+        11106,
+        34153
+      ]
+    },
+    {
+      "body_id": 77479,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34546,
+        10628,
+        35194
+      ]
+    },
+    {
+      "body_id": 49987,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34820,
+        9388,
+        33206
+      ]
+    },
+    {
+      "body_id": 48111,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32166,
+        10950,
+        34370
+      ]
+    },
+    {
+      "body_id": 53178,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31508,
+        12830,
+        34422
+      ]
+    },
+    {
+      "body_id": 43980,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31801,
+        8086,
+        32077
+      ]
+    },
+    {
+      "body_id": 92924,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38436,
+        9780,
+        33908
+      ]
+    },
+    {
+      "body_id": 115240,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35967,
+        8552,
+        32814
+      ]
+    },
+    {
+      "body_id": 70553,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33236,
+        11332,
+        35352
+      ]
+    },
+    {
+      "body_id": 59923,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31906,
+        11238,
+        34663
+      ]
+    },
+    {
+      "body_id": 44840,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32693,
+        9642,
+        33999
+      ]
+    },
+    {
+      "body_id": 64525,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31485,
+        13920,
+        34734
+      ]
+    },
+    {
+      "body_id": 52220,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31874,
+        13709,
+        34800
+      ]
+    },
+    {
+      "body_id": 48904,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31576,
+        14514,
+        35054
+      ]
+    },
+    {
+      "body_id": 41787,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33520,
+        8382,
+        32688
+      ]
+    },
+    {
+      "body_id": 66911,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31850,
+        13177,
+        34636
+      ]
+    },
+    {
+      "body_id": 66583,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33700,
+        9757,
+        33886
+      ]
+    },
+    {
+      "body_id": 114235,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32360,
+        11812,
+        35078
+      ]
+    },
+    {
+      "body_id": 81601,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30892,
+        12250,
+        33754
+      ]
+    },
+    {
+      "body_id": 64437,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34450,
+        8588,
+        33292
+      ]
+    },
+    {
+      "body_id": 43380,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33420,
+        8932,
+        33694
+      ]
+    },
+    {
+      "body_id": 65379,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31476,
+        11322,
+        34476
+      ]
+    },
+    {
+      "body_id": 58961,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33498,
+        11720,
+        35530
+      ]
+    },
+    {
+      "body_id": 59978,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34880,
+        11508,
+        35636
+      ]
+    },
+    {
+      "body_id": 57314,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34556,
+        10091,
+        34720
+      ]
+    },
+    {
+      "body_id": 59286,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32810,
+        11496,
+        35216
+      ]
+    },
+    {
+      "body_id": 60957,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34063,
+        8516,
+        33458
+      ]
+    },
+    {
+      "body_id": 50256,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32798,
+        9280,
+        33742
+      ]
+    },
+    {
+      "body_id": 83921,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32348,
+        10896,
+        34820
+      ]
+    },
+    {
+      "body_id": 59494,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34253,
+        12513,
+        36221
+      ]
+    },
+    {
+      "body_id": 44054,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34329,
+        10686,
+        34008
+      ]
+    },
+    {
+      "body_id": 124632,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31012,
+        12878,
+        34326
+      ]
+    },
+    {
+      "body_id": 107452,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38598,
+        12656,
+        36444
+      ]
+    },
+    {
+      "body_id": 66812,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31158,
+        10492,
+        33718
+      ]
+    },
+    {
+      "body_id": 92927,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": null
+    },
+    {
+      "body_id": 56666,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34780,
+        10906,
+        34976
+      ]
+    },
+    {
+      "body_id": 63189,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36010,
+        7529,
+        32436
+      ]
+    },
+    {
+      "body_id": 57179,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33145,
+        9667,
+        34112
+      ]
+    },
+    {
+      "body_id": 68226,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31457,
+        12297,
+        34153
+      ]
+    },
+    {
+      "body_id": 41378,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34574,
+        8477,
+        33762
+      ]
+    },
+    {
+      "body_id": 518555,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37797,
+        17481,
+        38786
+      ]
+    },
+    {
+      "body_id": 61178,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33816,
+        9581,
+        33143
+      ]
+    },
+    {
+      "body_id": 87155,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34574,
+        7748,
+        33002
+      ]
+    },
+    {
+      "body_id": 15103,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35021,
+        9872,
+        33272
+      ]
+    },
+    {
+      "body_id": 67425,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31745,
+        7859,
+        32418
+      ]
+    },
+    {
+      "body_id": 53472,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32088,
+        10690,
+        33588
+      ]
+    },
+    {
+      "body_id": 49903,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33634,
+        10036,
+        33142
+      ]
+    },
+    {
+      "body_id": 523060,
+      "type": "MBON09",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        32384,
+        23634,
+        13855
+      ]
+    },
+    {
+      "body_id": 119936,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34748,
+        11008,
+        35446
+      ]
+    },
+    {
+      "body_id": 533201,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33676,
+        10585,
+        34007
+      ]
+    },
+    {
+      "body_id": 77158,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32270,
+        11378,
+        34908
+      ]
+    },
+    {
+      "body_id": 45016,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        28314,
+        13615,
+        34128
+      ]
+    },
+    {
+      "body_id": 87642,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33184,
+        10352,
+        34936
+      ]
+    },
+    {
+      "body_id": 67249,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34201,
+        10202,
+        34355
+      ]
+    },
+    {
+      "body_id": 57684,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32272,
+        8644,
+        33242
+      ]
+    },
+    {
+      "body_id": 56315,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32680,
+        9036,
+        33062
+      ]
+    },
+    {
+      "body_id": 541683,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31104,
+        9634,
+        33384
+      ]
+    },
+    {
+      "body_id": 74260,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36816,
+        10388,
+        35026
+      ]
+    },
+    {
+      "body_id": 57075,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34067,
+        10012,
+        34779
+      ]
+    },
+    {
+      "body_id": 21242,
+      "type": "MBON09",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        33560,
+        24044,
+        13547
+      ]
+    },
+    {
+      "body_id": 523628,
+      "type": "MBON21",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33944,
+        21809,
+        35257
+      ]
+    },
+    {
+      "body_id": 119278,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36774,
+        8499,
+        33322
+      ]
+    },
+    {
+      "body_id": 41232,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30946,
+        7864,
+        32324
+      ]
+    },
+    {
+      "body_id": 79832,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35584,
+        10698,
+        35288
+      ]
+    },
+    {
+      "body_id": 46670,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31003,
+        9932,
+        33008
+      ]
+    },
+    {
+      "body_id": 50304,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35430,
+        7328,
+        32994
+      ]
+    },
+    {
+      "body_id": 136570,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35849,
+        7113,
+        32224
+      ]
+    },
+    {
+      "body_id": 88703,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40066,
+        14479,
+        37312
+      ]
+    },
+    {
+      "body_id": 81506,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38022,
+        11533,
+        35234
+      ]
+    },
+    {
+      "body_id": 72032,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36536,
+        10966,
+        35548
+      ]
+    },
+    {
+      "body_id": 77523,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34205,
+        9818,
+        34061
+      ]
+    },
+    {
+      "body_id": 51354,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34902,
+        10138,
+        35055
+      ]
+    },
+    {
+      "body_id": 53688,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40286,
+        14664,
+        36754
+      ]
+    },
+    {
+      "body_id": 45553,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33916,
+        10436,
+        34702
+      ]
+    },
+    {
+      "body_id": 55850,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31654,
+        8448,
+        32444
+      ]
+    },
+    {
+      "body_id": 43775,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        27256,
+        13582,
+        34125
+      ]
+    },
+    {
+      "body_id": 46457,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31291,
+        13443,
+        34185
+      ]
+    },
+    {
+      "body_id": 130907,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32844,
+        9626,
+        32992
+      ]
+    },
+    {
+      "body_id": 42425,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31334,
+        8832,
+        32408
+      ]
+    },
+    {
+      "body_id": 64133,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33484,
+        9312,
+        32668
+      ]
+    },
+    {
+      "body_id": 129287,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32858,
+        8027,
+        32909
+      ]
+    },
+    {
+      "body_id": 63153,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31941,
+        12461,
+        34677
+      ]
+    },
+    {
+      "body_id": 45881,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34392,
+        7400,
+        32838
+      ]
+    },
+    {
+      "body_id": 93485,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34532,
+        9490,
+        32906
+      ]
+    },
+    {
+      "body_id": 50291,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35692,
+        8010,
+        32756
+      ]
+    },
+    {
+      "body_id": 140636,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39669,
+        12149,
+        35362
+      ]
+    },
+    {
+      "body_id": 165036,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38439,
+        17761,
+        37922
+      ]
+    },
+    {
+      "body_id": 62174,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33612,
+        10522,
+        35050
+      ]
+    },
+    {
+      "body_id": 64596,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30740,
+        8774,
+        32292
+      ]
+    },
+    {
+      "body_id": 153391,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33122,
+        9972,
+        34741
+      ]
+    },
+    {
+      "body_id": 83820,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35396,
+        8124,
+        32460
+      ]
+    },
+    {
+      "body_id": 148860,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35054,
+        7316,
+        32234
+      ]
+    },
+    {
+      "body_id": 57356,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35282,
+        6992,
+        32612
+      ]
+    },
+    {
+      "body_id": 180588,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37564,
+        11058,
+        35236
+      ]
+    },
+    {
+      "body_id": 53633,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32730,
+        12033,
+        35290
+      ]
+    },
+    {
+      "body_id": 83494,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33398,
+        9698,
+        33448
+      ]
+    },
+    {
+      "body_id": 59932,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34038,
+        10756,
+        35020
+      ]
+    },
+    {
+      "body_id": 119591,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33550,
+        10037,
+        34839
+      ]
+    },
+    {
+      "body_id": 138353,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33354,
+        9780,
+        34474
+      ]
+    },
+    {
+      "body_id": 11990,
+      "type": "MBON22",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34789,
+        19738,
+        35653
+      ]
+    },
+    {
+      "body_id": 129189,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35532,
+        7271,
+        32159
+      ]
+    },
+    {
+      "body_id": 80083,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35114,
+        10292,
+        34694
+      ]
+    },
+    {
+      "body_id": 77442,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34238,
+        10924,
+        35395
+      ]
+    },
+    {
+      "body_id": 107852,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34474,
+        11378,
+        35466
+      ]
+    },
+    {
+      "body_id": 70030,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38610,
+        16636,
+        38302
+      ]
+    },
+    {
+      "body_id": 71028,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36788,
+        9636,
+        32800
+      ]
+    },
+    {
+      "body_id": 68176,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37598,
+        9524,
+        33514
+      ]
+    },
+    {
+      "body_id": 129903,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36507,
+        7128,
+        32040
+      ]
+    },
+    {
+      "body_id": 69101,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36496,
+        9972,
+        34851
+      ]
+    },
+    {
+      "body_id": 46266,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33298,
+        7734,
+        32774
+      ]
+    },
+    {
+      "body_id": 52575,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38110,
+        7698,
+        31496
+      ]
+    },
+    {
+      "body_id": 164103,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38317,
+        11956,
+        35826
+      ]
+    },
+    {
+      "body_id": 92278,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38358,
+        11408,
+        35622
+      ]
+    },
+    {
+      "body_id": 78920,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38048,
+        11722,
+        35615
+      ]
+    },
+    {
+      "body_id": 61126,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38654,
+        13340,
+        36724
+      ]
+    },
+    {
+      "body_id": 123421,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39218,
+        11388,
+        35092
+      ]
+    },
+    {
+      "body_id": 55278,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38483,
+        12297,
+        36161
+      ]
+    },
+    {
+      "body_id": 142189,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37269,
+        8142,
+        32243
+      ]
+    },
+    {
+      "body_id": 65737,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30067,
+        8813,
+        32424
+      ]
+    },
+    {
+      "body_id": 70235,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33975,
+        7683,
+        32966
+      ]
+    },
+    {
+      "body_id": 61237,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34994,
+        8028,
+        32806
+      ]
+    },
+    {
+      "body_id": 60227,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36133,
+        8857,
+        32232
+      ]
+    },
+    {
+      "body_id": 205908,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38745,
+        12307,
+        35844
+      ]
+    },
+    {
+      "body_id": 72111,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31639,
+        12013,
+        33716
+      ]
+    },
+    {
+      "body_id": 88584,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36514,
+        9594,
+        32516
+      ]
+    },
+    {
+      "body_id": 60768,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37519,
+        8556,
+        31985
+      ]
+    },
+    {
+      "body_id": 123585,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40366,
+        14644,
+        36296
+      ]
+    },
+    {
+      "body_id": 58014,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35716,
+        8460,
+        32277
+      ]
+    },
+    {
+      "body_id": 47441,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39552,
+        11712,
+        35596
+      ]
+    },
+    {
+      "body_id": 98017,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37746,
+        7994,
+        31966
+      ]
+    },
+    {
+      "body_id": 85141,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39658,
+        11684,
+        35118
+      ]
+    },
+    {
+      "body_id": 67432,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33184,
+        10750,
+        35086
+      ]
+    },
+    {
+      "body_id": 543682,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36496,
+        8746,
+        32490
+      ]
+    },
+    {
+      "body_id": 120768,
+      "type": "PAM07",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        39510,
+        17040,
+        12201
+      ]
+    },
+    {
+      "body_id": 67337,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32056,
+        9305,
+        32612
+      ]
+    },
+    {
+      "body_id": 71770,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37138,
+        11166,
+        35574
+      ]
+    },
+    {
+      "body_id": 65997,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37297,
+        17987,
+        38285
+      ]
+    },
+    {
+      "body_id": 46475,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39688,
+        13016,
+        36336
+      ]
+    },
+    {
+      "body_id": 96497,
+      "type": "PAM07",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        40818,
+        17346,
+        12159
+      ]
+    },
+    {
+      "body_id": 41150,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36426,
+        9008,
+        31808
+      ]
+    },
+    {
+      "body_id": 112040,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32643,
+        8470,
+        32034
+      ]
+    },
+    {
+      "body_id": 50744,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36770,
+        7318,
+        31678
+      ]
+    },
+    {
+      "body_id": 82132,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37724,
+        7413,
+        31901
+      ]
+    },
+    {
+      "body_id": 59442,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30322,
+        8490,
+        32246
+      ]
+    },
+    {
+      "body_id": 54936,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30440,
+        8574,
+        32730
+      ]
+    },
+    {
+      "body_id": 43597,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35516,
+        6774,
+        32272
+      ]
+    },
+    {
+      "body_id": 53099,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34054,
+        8178,
+        32674
+      ]
+    },
+    {
+      "body_id": 64440,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33696,
+        9658,
+        32462
+      ]
+    },
+    {
+      "body_id": 68803,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34077,
+        9415,
+        32728
+      ]
+    },
+    {
+      "body_id": 58586,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34192,
+        8779,
+        32738
+      ]
+    },
+    {
+      "body_id": 57568,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31887,
+        8944,
+        32349
+      ]
+    },
+    {
+      "body_id": 70928,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33298,
+        9722,
+        33010
+      ]
+    },
+    {
+      "body_id": 144291,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35869,
+        6776,
+        31969
+      ]
+    },
+    {
+      "body_id": 40327,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39647,
+        10896,
+        34141
+      ]
+    },
+    {
+      "body_id": 88884,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35550,
+        7468,
+        32546
+      ]
+    },
+    {
+      "body_id": 69716,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36958,
+        9014,
+        32350
+      ]
+    },
+    {
+      "body_id": 80123,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        29747,
+        12958,
+        34035
+      ]
+    },
+    {
+      "body_id": 48886,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37296,
+        7249,
+        31993
+      ]
+    },
+    {
+      "body_id": 73161,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34115,
+        7607,
+        32542
+      ]
+    },
+    {
+      "body_id": 64376,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33363,
+        9164,
+        32124
+      ]
+    },
+    {
+      "body_id": 70489,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35665,
+        7490,
+        31824
+      ]
+    },
+    {
+      "body_id": 63269,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37010,
+        7546,
+        32334
+      ]
+    },
+    {
+      "body_id": 57532,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32582,
+        7134,
+        31702
+      ]
+    },
+    {
+      "body_id": 543948,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36216,
+        7616,
+        32091
+      ]
+    },
+    {
+      "body_id": 53836,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34600,
+        9104,
+        32608
+      ]
+    },
+    {
+      "body_id": 56297,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33510,
+        8782,
+        32424
+      ]
+    },
+    {
+      "body_id": 68635,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31100,
+        8813,
+        32002
+      ]
+    },
+    {
+      "body_id": 543605,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31816,
+        8476,
+        32992
+      ]
+    },
+    {
+      "body_id": 51866,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37957,
+        9395,
+        31577
+      ]
+    },
+    {
+      "body_id": 49687,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34360,
+        7220,
+        32434
+      ]
+    },
+    {
+      "body_id": 544736,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30590,
+        10438,
+        33148
+      ]
+    },
+    {
+      "body_id": 61113,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34532,
+        8394,
+        32890
+      ]
+    },
+    {
+      "body_id": 61605,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33924,
+        9058,
+        32423
+      ]
+    },
+    {
+      "body_id": 64471,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36747,
+        11335,
+        35812
+      ]
+    },
+    {
+      "body_id": 84007,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32466,
+        9910,
+        32865
+      ]
+    },
+    {
+      "body_id": 47380,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40682,
+        15042,
+        36872
+      ]
+    },
+    {
+      "body_id": 53144,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        29496,
+        12077,
+        33687
+      ]
+    },
+    {
+      "body_id": 189047,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40334,
+        15520,
+        37182
+      ]
+    },
+    {
+      "body_id": 146122,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40062,
+        16255,
+        37534
+      ]
+    },
+    {
+      "body_id": 34130,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34974,
+        16708,
+        36850
+      ]
+    },
+    {
+      "body_id": 523358,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40145,
+        16646,
+        37769
+      ]
+    },
+    {
+      "body_id": 131100,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36534,
+        7428,
+        32400
+      ]
+    },
+    {
+      "body_id": 95167,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34257,
+        10377,
+        34988
+      ]
+    },
+    {
+      "body_id": 34908,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34040,
+        10709,
+        33683
+      ]
+    },
+    {
+      "body_id": 51883,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34872,
+        7008,
+        32492
+      ]
+    },
+    {
+      "body_id": 94674,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37820,
+        8907,
+        31300
+      ]
+    },
+    {
+      "body_id": 82582,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32024,
+        9740,
+        32812
+      ]
+    },
+    {
+      "body_id": 93462,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30052,
+        10671,
+        33364
+      ]
+    },
+    {
+      "body_id": 40602,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35190,
+        8974,
+        32548
+      ]
+    },
+    {
+      "body_id": 76317,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32780,
+        7658,
+        32470
+      ]
+    },
+    {
+      "body_id": 60200,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31482,
+        8518,
+        32057
+      ]
+    },
+    {
+      "body_id": 82386,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32175,
+        8810,
+        32870
+      ]
+    },
+    {
+      "body_id": 78858,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31670,
+        8822,
+        32770
+      ]
+    },
+    {
+      "body_id": 76493,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31266,
+        9058,
+        32832
+      ]
+    },
+    {
+      "body_id": 117952,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32170,
+        8576,
+        32547
+      ]
+    },
+    {
+      "body_id": 49279,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31310,
+        8464,
+        32874
+      ]
+    },
+    {
+      "body_id": 76973,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33944,
+        9036,
+        33011
+      ]
+    },
+    {
+      "body_id": 110375,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32570,
+        7968,
+        32193
+      ]
+    },
+    {
+      "body_id": 104166,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37270,
+        7410,
+        31518
+      ]
+    },
+    {
+      "body_id": 81651,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34900,
+        9538,
+        32646
+      ]
+    },
+    {
+      "body_id": 62062,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30688,
+        8432,
+        31985
+      ]
+    },
+    {
+      "body_id": 66611,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36037,
+        9999,
+        32571
+      ]
+    },
+    {
+      "body_id": 75072,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33674,
+        9506,
+        34272
+      ]
+    },
+    {
+      "body_id": 131946,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35714,
+        9428,
+        32431
+      ]
+    },
+    {
+      "body_id": 41807,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33822,
+        8446,
+        32192
+      ]
+    },
+    {
+      "body_id": 80397,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30795,
+        8237,
+        32672
+      ]
+    },
+    {
+      "body_id": 62645,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32595,
+        7713,
+        31843
+      ]
+    },
+    {
+      "body_id": 52773,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32446,
+        9420,
+        32826
+      ]
+    },
+    {
+      "body_id": 75880,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34486,
+        8528,
+        32480
+      ]
+    },
+    {
+      "body_id": 67451,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32082,
+        11982,
+        34585
+      ]
+    },
+    {
+      "body_id": 82895,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34554,
+        7866,
+        32610
+      ]
+    },
+    {
+      "body_id": 51391,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34632,
+        8978,
+        33006
+      ]
+    },
+    {
+      "body_id": 45183,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36433,
+        6813,
+        31794
+      ]
+    },
+    {
+      "body_id": 24204,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38191,
+        10802,
+        31996
+      ]
+    },
+    {
+      "body_id": 73195,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35806,
+        8005,
+        31753
+      ]
+    },
+    {
+      "body_id": 79372,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33511,
+        7653,
+        32085
+      ]
+    },
+    {
+      "body_id": 53173,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36140,
+        8004,
+        31475
+      ]
+    },
+    {
+      "body_id": 82188,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35577,
+        10161,
+        34327
+      ]
+    },
+    {
+      "body_id": 139008,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40668,
+        8388,
+        31716
+      ]
+    },
+    {
+      "body_id": 67120,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40264,
+        11168,
+        34418
+      ]
+    },
+    {
+      "body_id": 79653,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33891,
+        11276,
+        35515
+      ]
+    },
+    {
+      "body_id": 48309,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36918,
+        8468,
+        32412
+      ]
+    },
+    {
+      "body_id": 52402,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34247,
+        9847,
+        32638
+      ]
+    },
+    {
+      "body_id": 583883,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33204,
+        7534,
+        32400
+      ]
+    },
+    {
+      "body_id": 62003,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35742,
+        8901,
+        32569
+      ]
+    },
+    {
+      "body_id": 50035,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37184,
+        8430,
+        31774
+      ]
+    },
+    {
+      "body_id": 119632,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40790,
+        12253,
+        35197
+      ]
+    },
+    {
+      "body_id": 53267,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30910,
+        8660,
+        32738
+      ]
+    },
+    {
+      "body_id": 10569,
+      "type": "DC1_adPN",
+      "class": "ALPN",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        46320,
+        20723,
+        13639
+      ]
+    },
+    {
+      "body_id": 65161,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31046,
+        8332,
+        32228
+      ]
+    },
+    {
+      "body_id": 133053,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36785,
+        8656,
+        31956
+      ]
+    },
+    {
+      "body_id": 27583,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39873,
+        8585,
+        31856
+      ]
+    },
+    {
+      "body_id": 49752,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33704,
+        8010,
+        31853
+      ]
+    },
+    {
+      "body_id": 79931,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36508,
+        9228,
+        32212
+      ]
+    },
+    {
+      "body_id": 84972,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36258,
+        8190,
+        32086
+      ]
+    },
+    {
+      "body_id": 90367,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30495,
+        8095,
+        32358
+      ]
+    },
+    {
+      "body_id": 45563,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33706,
+        14998,
+        35808
+      ]
+    },
+    {
+      "body_id": 138352,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41903,
+        9110,
+        30754
+      ]
+    },
+    {
+      "body_id": 22533,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38910,
+        12759,
+        35920
+      ]
+    },
+    {
+      "body_id": 195279,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37044,
+        6876,
+        31474
+      ]
+    },
+    {
+      "body_id": 61382,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40676,
+        11650,
+        34456
+      ]
+    },
+    {
+      "body_id": 81005,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41980,
+        10987,
+        30239
+      ]
+    },
+    {
+      "body_id": 129965,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38970,
+        12602,
+        36268
+      ]
+    },
+    {
+      "body_id": 102887,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35672,
+        17570,
+        37320
+      ]
+    },
+    {
+      "body_id": 569213,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39700,
+        16581,
+        37785
+      ]
+    },
+    {
+      "body_id": 212767,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33929,
+        14604,
+        36208
+      ]
+    },
+    {
+      "body_id": 55062,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38368,
+        10714,
+        33684
+      ]
+    },
+    {
+      "body_id": 62159,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38763,
+        11802,
+        35786
+      ]
+    },
+    {
+      "body_id": 521384,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39929,
+        13912,
+        35967
+      ]
+    },
+    {
+      "body_id": 75652,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34758,
+        9466,
+        34528
+      ]
+    },
+    {
+      "body_id": 61967,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39774,
+        15277,
+        36072
+      ]
+    },
+    {
+      "body_id": 532544,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39801,
+        16796,
+        38144
+      ]
+    },
+    {
+      "body_id": 48313,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31126,
+        7500,
+        31836
+      ]
+    },
+    {
+      "body_id": 56430,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30634,
+        9234,
+        32254
+      ]
+    },
+    {
+      "body_id": 49019,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33017,
+        8075,
+        32537
+      ]
+    },
+    {
+      "body_id": 52022,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32991,
+        7968,
+        32095
+      ]
+    },
+    {
+      "body_id": 63930,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32923,
+        8929,
+        32073
+      ]
+    },
+    {
+      "body_id": 70445,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39182,
+        16822,
+        37080
+      ]
+    },
+    {
+      "body_id": 541716,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37328,
+        10416,
+        33240
+      ]
+    },
+    {
+      "body_id": 60516,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33086,
+        8476,
+        32330
+      ]
+    },
+    {
+      "body_id": 526670,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36418,
+        16665,
+        38064
+      ]
+    },
+    {
+      "body_id": 138408,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40186,
+        16300,
+        36586
+      ]
+    },
+    {
+      "body_id": 11752,
+      "type": "PPL103",
+      "class": "DAN",
+      "side": "L",
+      "neurotransmitter": "dopamine",
+      "position": [
+        64098,
+        12244,
+        32943
+      ]
+    },
+    {
+      "body_id": 519131,
+      "type": "MBON32",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "gaba",
+      "position": [
+        37116,
+        15909,
+        14061
+      ]
+    },
+    {
+      "body_id": 519368,
+      "type": "MBON12",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        45571,
+        35408,
+        16060
+      ]
+    },
+    {
+      "body_id": 47779,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33840,
+        7392,
+        32297
+      ]
+    },
+    {
+      "body_id": 212154,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40450,
+        14682,
+        37166
+      ]
+    },
+    {
+      "body_id": 521086,
+      "type": "MBON12",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        46214,
+        35572,
+        15899
+      ]
+    },
+    {
+      "body_id": 86814,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40464,
+        15564,
+        36706
+      ]
+    },
+    {
+      "body_id": 43616,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39481,
+        15776,
+        37544
+      ]
+    },
+    {
+      "body_id": 68487,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35038,
+        16832,
+        36456
+      ]
+    },
+    {
+      "body_id": 519854,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41464,
+        8981,
+        32122
+      ]
+    },
+    {
+      "body_id": 75288,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37634,
+        11582,
+        35620
+      ]
+    },
+    {
+      "body_id": 66099,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42774,
+        10652,
+        29678
+      ]
+    },
+    {
+      "body_id": 148493,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40506,
+        11728,
+        34806
+      ]
+    },
+    {
+      "body_id": 52518,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34726,
+        9959,
+        34299
+      ]
+    },
+    {
+      "body_id": 58183,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34658,
+        7424,
+        32015
+      ]
+    },
+    {
+      "body_id": 45663,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        28338,
+        13104,
+        34236
+      ]
+    },
+    {
+      "body_id": 73814,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34256,
+        7998,
+        32262
+      ]
+    },
+    {
+      "body_id": 69620,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31176,
+        9434,
+        32624
+      ]
+    },
+    {
+      "body_id": 135739,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40122,
+        12588,
+        35732
+      ]
+    },
+    {
+      "body_id": 53655,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35078,
+        6799,
+        32135
+      ]
+    },
+    {
+      "body_id": 97772,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39434,
+        17014,
+        37408
+      ]
+    },
+    {
+      "body_id": 45060,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40261,
+        14209,
+        37044
+      ]
+    },
+    {
+      "body_id": 14182,
+      "type": "PPL103",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        33002,
+        14091,
+        34364
+      ]
+    },
+    {
+      "body_id": 508595,
+      "type": "MBON35",
+      "class": "MBON",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38107,
+        16431,
+        13061
+      ]
+    },
+    {
+      "body_id": 82161,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39128,
+        11558,
+        35568
+      ]
+    },
+    {
+      "body_id": 72387,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40216,
+        15404,
+        37612
+      ]
+    },
+    {
+      "body_id": 62559,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38072,
+        17004,
+        37326
+      ]
+    },
+    {
+      "body_id": 46991,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36501,
+        17965,
+        37544
+      ]
+    },
+    {
+      "body_id": 62660,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36764,
+        8142,
+        31703
+      ]
+    },
+    {
+      "body_id": 58950,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36896,
+        10870,
+        35242
+      ]
+    },
+    {
+      "body_id": 148419,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39662,
+        11218,
+        34902
+      ]
+    },
+    {
+      "body_id": 89471,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35128,
+        7644,
+        32534
+      ]
+    },
+    {
+      "body_id": 44082,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38892,
+        10153,
+        34165
+      ]
+    },
+    {
+      "body_id": 45736,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40816,
+        12778,
+        35224
+      ]
+    },
+    {
+      "body_id": 62241,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38539,
+        11066,
+        31792
+      ]
+    },
+    {
+      "body_id": 137595,
+      "type": "PAM07",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        43166,
+        11012,
+        14918
+      ]
+    },
+    {
+      "body_id": 49254,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37476,
+        7080,
+        31656
+      ]
+    },
+    {
+      "body_id": 547275,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40093,
+        14941,
+        37508
+      ]
+    },
+    {
+      "body_id": 97999,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36862,
+        17871,
+        38068
+      ]
+    },
+    {
+      "body_id": 129321,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39832,
+        16241,
+        36413
+      ]
+    },
+    {
+      "body_id": 525305,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40765,
+        9965,
+        32681
+      ]
+    },
+    {
+      "body_id": 65965,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35486,
+        17504,
+        36930
+      ]
+    },
+    {
+      "body_id": 130317,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39284,
+        16392,
+        37306
+      ]
+    },
+    {
+      "body_id": 139642,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38878,
+        17732,
+        37738
+      ]
+    },
+    {
+      "body_id": 65606,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39920,
+        16363,
+        36920
+      ]
+    },
+    {
+      "body_id": 99139,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40827,
+        10271,
+        30471
+      ]
+    },
+    {
+      "body_id": 83576,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38349,
+        13832,
+        36995
+      ]
+    },
+    {
+      "body_id": 53994,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42657,
+        9072,
+        30069
+      ]
+    },
+    {
+      "body_id": 72523,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38753,
+        8302,
+        31002
+      ]
+    },
+    {
+      "body_id": 53154,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34954,
+        7316,
+        32792
+      ]
+    },
+    {
+      "body_id": 47901,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32814,
+        8285,
+        31674
+      ]
+    },
+    {
+      "body_id": 45612,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38213,
+        17307,
+        38637
+      ]
+    },
+    {
+      "body_id": 123280,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39919,
+        16954,
+        37612
+      ]
+    },
+    {
+      "body_id": 42216,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34820,
+        8990,
+        32304
+      ]
+    },
+    {
+      "body_id": 45392,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31774,
+        7582,
+        32077
+      ]
+    },
+    {
+      "body_id": 58013,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32673,
+        7358,
+        32092
+      ]
+    },
+    {
+      "body_id": 49569,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32098,
+        7846,
+        31869
+      ]
+    },
+    {
+      "body_id": 71033,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35343,
+        9814,
+        32575
+      ]
+    },
+    {
+      "body_id": 64701,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34870,
+        8698,
+        32728
+      ]
+    },
+    {
+      "body_id": 180812,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40109,
+        12213,
+        35081
+      ]
+    },
+    {
+      "body_id": 83341,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33315,
+        7174,
+        32186
+      ]
+    },
+    {
+      "body_id": 53050,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40485,
+        13371,
+        36073
+      ]
+    },
+    {
+      "body_id": 47984,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38020,
+        17880,
+        37191
+      ]
+    },
+    {
+      "body_id": 133806,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32294,
+        8322,
+        31836
+      ]
+    },
+    {
+      "body_id": 51195,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32578,
+        9211,
+        32128
+      ]
+    },
+    {
+      "body_id": 51430,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34177,
+        7602,
+        32019
+      ]
+    },
+    {
+      "body_id": 61456,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34650,
+        7600,
+        32372
+      ]
+    },
+    {
+      "body_id": 39909,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38786,
+        17002,
+        36258
+      ]
+    },
+    {
+      "body_id": 64809,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32208,
+        7308,
+        31895
+      ]
+    },
+    {
+      "body_id": 53383,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34392,
+        9420,
+        32248
+      ]
+    },
+    {
+      "body_id": 69967,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34657,
+        8502,
+        32064
+      ]
+    },
+    {
+      "body_id": 140182,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        32224,
+        7604,
+        32320
+      ]
+    },
+    {
+      "body_id": 60172,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        31894,
+        8624,
+        31913
+      ]
+    },
+    {
+      "body_id": 130403,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36783,
+        8105,
+        32043
+      ]
+    },
+    {
+      "body_id": 60739,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34066,
+        7118,
+        32053
+      ]
+    },
+    {
+      "body_id": 40921,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35920,
+        9204,
+        32069
+      ]
+    },
+    {
+      "body_id": 65559,
+      "type": "PAM07",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        40319,
+        13365,
+        13901
+      ]
+    },
+    {
+      "body_id": 124242,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36970,
+        6957,
+        31841
+      ]
+    },
+    {
+      "body_id": 106691,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33022,
+        7075,
+        31833
+      ]
+    },
+    {
+      "body_id": 43658,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40404,
+        13732,
+        36384
+      ]
+    },
+    {
+      "body_id": 57355,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33397,
+        8199,
+        32124
+      ]
+    },
+    {
+      "body_id": 145352,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34852,
+        15574,
+        36442
+      ]
+    },
+    {
+      "body_id": 83833,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39402,
+        10274,
+        34000
+      ]
+    },
+    {
+      "body_id": 52156,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35418,
+        9364,
+        32736
+      ]
+    },
+    {
+      "body_id": 124055,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34063,
+        14626,
+        35923
+      ]
+    },
+    {
+      "body_id": 77975,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40704,
+        14416,
+        35714
+      ]
+    },
+    {
+      "body_id": 163971,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33970,
+        10070,
+        32438
+      ]
+    },
+    {
+      "body_id": 172084,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39575,
+        15764,
+        36553
+      ]
+    },
+    {
+      "body_id": 47026,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38780,
+        17490,
+        38113
+      ]
+    },
+    {
+      "body_id": 132312,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40212,
+        16578,
+        37204
+      ]
+    },
+    {
+      "body_id": 109583,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40674,
+        14458,
+        36826
+      ]
+    },
+    {
+      "body_id": 46287,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37632,
+        18288,
+        37918
+      ]
+    },
+    {
+      "body_id": 109268,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40808,
+        9484,
+        32452
+      ]
+    },
+    {
+      "body_id": 31720,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39571,
+        10106,
+        33017
+      ]
+    },
+    {
+      "body_id": 77449,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39484,
+        10668,
+        34532
+      ]
+    },
+    {
+      "body_id": 134660,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41122,
+        7684,
+        30098
+      ]
+    },
+    {
+      "body_id": 221876,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40286,
+        10358,
+        33292
+      ]
+    },
+    {
+      "body_id": 134883,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41740,
+        9439,
+        31329
+      ]
+    },
+    {
+      "body_id": 73296,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38913,
+        9844,
+        33792
+      ]
+    },
+    {
+      "body_id": 506819,
+      "type": "PAM01",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        38428,
+        10614,
+        17512
+      ]
+    },
+    {
+      "body_id": 125860,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40385,
+        15130,
+        36061
+      ]
+    },
+    {
+      "body_id": 66594,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37216,
+        17698,
+        36580
+      ]
+    },
+    {
+      "body_id": 566092,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38554,
+        8472,
+        32366
+      ]
+    },
+    {
+      "body_id": 21879,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40349,
+        13528,
+        35802
+      ]
+    },
+    {
+      "body_id": 48975,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40562,
+        12262,
+        34862
+      ]
+    },
+    {
+      "body_id": 64115,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38942,
+        16095,
+        37790
+      ]
+    },
+    {
+      "body_id": 61279,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36045,
+        17799,
+        37316
+      ]
+    },
+    {
+      "body_id": 81967,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40395,
+        15827,
+        37520
+      ]
+    },
+    {
+      "body_id": 55857,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38634,
+        17092,
+        38428
+      ]
+    },
+    {
+      "body_id": 176770,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36188,
+        9091,
+        32842
+      ]
+    },
+    {
+      "body_id": 533346,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42846,
+        9950,
+        30174
+      ]
+    },
+    {
+      "body_id": 45512,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37172,
+        9041,
+        31938
+      ]
+    },
+    {
+      "body_id": 89839,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35698,
+        7098,
+        31628
+      ]
+    },
+    {
+      "body_id": 42908,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38706,
+        10896,
+        34990
+      ]
+    },
+    {
+      "body_id": 43850,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37603,
+        17875,
+        37844
+      ]
+    },
+    {
+      "body_id": 134216,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36939,
+        9958,
+        32538
+      ]
+    },
+    {
+      "body_id": 537082,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37348,
+        8798,
+        32794
+      ]
+    },
+    {
+      "body_id": 81628,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34929,
+        7875,
+        32121
+      ]
+    },
+    {
+      "body_id": 527577,
+      "type": "VA6_adPN",
+      "class": "ALPN",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41017,
+        30024,
+        11503
+      ]
+    },
+    {
+      "body_id": 73457,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38608,
+        11752,
+        35406
+      ]
+    },
+    {
+      "body_id": 86553,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34136,
+        8312,
+        31926
+      ]
+    },
+    {
+      "body_id": 118769,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39760,
+        16682,
+        37248
+      ]
+    },
+    {
+      "body_id": 154433,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39480,
+        9546,
+        33106
+      ]
+    },
+    {
+      "body_id": 139742,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41834,
+        9319,
+        30085
+      ]
+    },
+    {
+      "body_id": 83162,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38430,
+        9322,
+        33068
+      ]
+    },
+    {
+      "body_id": 76587,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36626,
+        8520,
+        31490
+      ]
+    },
+    {
+      "body_id": 87660,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36450,
+        7704,
+        31757
+      ]
+    },
+    {
+      "body_id": 136144,
+      "type": "PAM08",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        41221,
+        17580,
+        12172
+      ]
+    },
+    {
+      "body_id": 67722,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33648,
+        7909,
+        32489
+      ]
+    },
+    {
+      "body_id": 76443,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36904,
+        9677,
+        32159
+      ]
+    },
+    {
+      "body_id": 136208,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42712,
+        9478,
+        30292
+      ]
+    },
+    {
+      "body_id": 134359,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41257,
+        8179,
+        30172
+      ]
+    },
+    {
+      "body_id": 63394,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42744,
+        10185,
+        29462
+      ]
+    },
+    {
+      "body_id": 72141,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38970,
+        8840,
+        32400
+      ]
+    },
+    {
+      "body_id": 47196,
+      "type": "PAM07",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        39992,
+        13702,
+        13908
+      ]
+    },
+    {
+      "body_id": 148548,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40810,
+        7294,
+        29808
+      ]
+    },
+    {
+      "body_id": 95158,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42646,
+        8644,
+        29578
+      ]
+    },
+    {
+      "body_id": 72695,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37546,
+        9786,
+        33210
+      ]
+    },
+    {
+      "body_id": 69431,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38332,
+        11282,
+        34792
+      ]
+    },
+    {
+      "body_id": 163516,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39842,
+        7334,
+        30434
+      ]
+    },
+    {
+      "body_id": 524851,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40036,
+        7789,
+        30565
+      ]
+    },
+    {
+      "body_id": 121103,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40330,
+        7136,
+        29824
+      ]
+    },
+    {
+      "body_id": 63398,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39220,
+        16093,
+        36394
+      ]
+    },
+    {
+      "body_id": 105128,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41208,
+        9824,
+        32536
+      ]
+    },
+    {
+      "body_id": 57978,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42125,
+        8162,
+        29153
+      ]
+    },
+    {
+      "body_id": 23166,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40526,
+        10027,
+        30759
+      ]
+    },
+    {
+      "body_id": 103255,
+      "type": "PAM08",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        39156,
+        13114,
+        14606
+      ]
+    },
+    {
+      "body_id": 84664,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37432,
+        9280,
+        32302
+      ]
+    },
+    {
+      "body_id": 48021,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        43053,
+        9345,
+        29960
+      ]
+    },
+    {
+      "body_id": 51428,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38872,
+        9462,
+        33036
+      ]
+    },
+    {
+      "body_id": 108002,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36032,
+        8102,
+        32474
+      ]
+    },
+    {
+      "body_id": 524809,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38596,
+        9572,
+        33446
+      ]
+    },
+    {
+      "body_id": 136310,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40380,
+        12508,
+        35272
+      ]
+    },
+    {
+      "body_id": 70312,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37540,
+        6862,
+        31268
+      ]
+    },
+    {
+      "body_id": 68137,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39091,
+        14265,
+        36610
+      ]
+    },
+    {
+      "body_id": 67320,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40316,
+        9738,
+        32764
+      ]
+    },
+    {
+      "body_id": 64404,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36604,
+        17788,
+        36758
+      ]
+    },
+    {
+      "body_id": 142538,
+      "type": "PAM08",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        42016,
+        17387,
+        11877
+      ]
+    },
+    {
+      "body_id": 51855,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        35352,
+        7712,
+        32159
+      ]
+    },
+    {
+      "body_id": 63482,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37918,
+        7053,
+        31468
+      ]
+    },
+    {
+      "body_id": 50839,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42420,
+        8278,
+        30194
+      ]
+    },
+    {
+      "body_id": 100258,
+      "type": "PAM01",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        42882,
+        10826,
+        15212
+      ]
+    },
+    {
+      "body_id": 144012,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40512,
+        10098,
+        33037
+      ]
+    },
+    {
+      "body_id": 63508,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41614,
+        10800,
+        30592
+      ]
+    },
+    {
+      "body_id": 539249,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        43253,
+        9730,
+        29813
+      ]
+    },
+    {
+      "body_id": 88655,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41246,
+        7572,
+        29784
+      ]
+    },
+    {
+      "body_id": 83608,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42144,
+        8123,
+        29957
+      ]
+    },
+    {
+      "body_id": 87382,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41120,
+        9600,
+        30848
+      ]
+    },
+    {
+      "body_id": 77126,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41484,
+        10625,
+        30249
+      ]
+    },
+    {
+      "body_id": 78361,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42721,
+        10133,
+        30557
+      ]
+    },
+    {
+      "body_id": 66601,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41594,
+        9348,
+        31738
+      ]
+    },
+    {
+      "body_id": 85137,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40036,
+        10047,
+        33033
+      ]
+    },
+    {
+      "body_id": 135238,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40159,
+        9390,
+        32418
+      ]
+    },
+    {
+      "body_id": 67721,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        33700,
+        15566,
+        36010
+      ]
+    },
+    {
+      "body_id": 86985,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40654,
+        12684,
+        35600
+      ]
+    },
+    {
+      "body_id": 66519,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42480,
+        8736,
+        29916
+      ]
+    },
+    {
+      "body_id": 46463,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41184,
+        9126,
+        31845
+      ]
+    },
+    {
+      "body_id": 543677,
+      "type": "PAM01",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        40586,
+        9718,
+        17418
+      ]
+    },
+    {
+      "body_id": 41891,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39880,
+        7037,
+        29814
+      ]
+    },
+    {
+      "body_id": 78811,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39769,
+        14591,
+        36346
+      ]
+    },
+    {
+      "body_id": 47997,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        36930,
+        7559,
+        31991
+      ]
+    },
+    {
+      "body_id": 523630,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39867,
+        11810,
+        34623
+      ]
+    },
+    {
+      "body_id": 81000,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34456,
+        15470,
+        36474
+      ]
+    },
+    {
+      "body_id": 75045,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40002,
+        10748,
+        34139
+      ]
+    },
+    {
+      "body_id": 61981,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39144,
+        10249,
+        33664
+      ]
+    },
+    {
+      "body_id": 93772,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42280,
+        9542,
+        30566
+      ]
+    },
+    {
+      "body_id": 94001,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42487,
+        9836,
+        29618
+      ]
+    },
+    {
+      "body_id": 38967,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        43182,
+        10620,
+        29518
+      ]
+    },
+    {
+      "body_id": 171163,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42948,
+        9546,
+        29452
+      ]
+    },
+    {
+      "body_id": 32035,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40414,
+        13098,
+        35526
+      ]
+    },
+    {
+      "body_id": 93859,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39750,
+        13644,
+        36954
+      ]
+    },
+    {
+      "body_id": 40376,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34139,
+        15320,
+        36129
+      ]
+    },
+    {
+      "body_id": 36251,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39249,
+        12006,
+        35726
+      ]
+    },
+    {
+      "body_id": 54455,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        34701,
+        15902,
+        36622
+      ]
+    },
+    {
+      "body_id": 106115,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        30357,
+        12319,
+        33821
+      ]
+    },
+    {
+      "body_id": 62917,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41770,
+        7811,
+        29221
+      ]
+    },
+    {
+      "body_id": 150913,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39258,
+        12612,
+        35630
+      ]
+    },
+    {
+      "body_id": 81563,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38702,
+        10329,
+        31593
+      ]
+    },
+    {
+      "body_id": 63100,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38642,
+        17544,
+        37412
+      ]
+    },
+    {
+      "body_id": 533371,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39202,
+        13498,
+        36898
+      ]
+    },
+    {
+      "body_id": 53947,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38219,
+        12027,
+        35341
+      ]
+    },
+    {
+      "body_id": 57669,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        38020,
+        9233,
+        32562
+      ]
+    },
+    {
+      "body_id": 583848,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39682,
+        12081,
+        35866
+      ]
+    },
+    {
+      "body_id": 143875,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41307,
+        9798,
+        31948
+      ]
+    },
+    {
+      "body_id": 569775,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37749,
+        8917,
+        32839
+      ]
+    },
+    {
+      "body_id": 138573,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39825,
+        9616,
+        32768
+      ]
+    },
+    {
+      "body_id": 73750,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39234,
+        9178,
+        32718
+      ]
+    },
+    {
+      "body_id": 133642,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41014,
+        8146,
+        31363
+      ]
+    },
+    {
+      "body_id": 122293,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42133,
+        8493,
+        29693
+      ]
+    },
+    {
+      "body_id": 74403,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37618,
+        8360,
+        32730
+      ]
+    },
+    {
+      "body_id": 146603,
+      "type": "PAM01",
+      "class": "DAN",
+      "side": "R",
+      "neurotransmitter": "dopamine",
+      "position": [
+        38776,
+        15614,
+        13754
+      ]
+    },
+    {
+      "body_id": 72643,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40687,
+        9193,
+        31856
+      ]
+    },
+    {
+      "body_id": 81427,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        37130,
+        8372,
+        31282
+      ]
+    },
+    {
+      "body_id": 80079,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39562,
+        13677,
+        36164
+      ]
+    },
+    {
+      "body_id": 142769,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39180,
+        10974,
+        34796
+      ]
+    },
+    {
+      "body_id": 168306,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39314,
+        13819,
+        36563
+      ]
+    },
+    {
+      "body_id": 59261,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39324,
+        12728,
+        36454
+      ]
+    },
+    {
+      "body_id": 527211,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        39405,
+        16187,
+        37754
+      ]
+    },
+    {
+      "body_id": 537652,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        40446,
+        13932,
+        35423
+      ]
+    },
+    {
+      "body_id": 135362,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        41220,
+        10199,
+        32259
+      ]
+    },
+    {
+      "body_id": 63506,
+      "type": "KCg-m",
+      "class": "Kenyon_Cell",
+      "side": "R",
+      "neurotransmitter": "acetylcholine",
+      "position": [
+        42514,
+        9855,
+        30888
+      ]
+    }
+  ],
+  "modeling_note": "Synapse counts initialize an artificial recurrent graph. Signs use GABA/glutamate as inhibitory assumptions; other transmitters are not a physiological model. Learned weights and surgery depart from biology."
+}
