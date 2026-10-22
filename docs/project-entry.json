@@ -1,0 +1,16 @@
+{
+  "title": "SomaHouse",
+  "author": "Michael Wong",
+  "year": 2026,
+  "description": "A fly-derived modular circuit learns to regulate a simulated house. Three-seed training, circuit surgery and transparent control comparisons.",
+  "repository": "https://github.com/thekozugroup/SomaHouse",
+  "caseStudy": "index.html",
+  "tags": [
+    "Machine learning",
+    "Building control",
+    "Connectomics",
+    "Research"
+  ],
+  "hero": "comparison.png",
+  "status": "Simulation study completed"
+}

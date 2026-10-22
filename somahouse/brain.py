@@ -85,9 +85,13 @@ class HouseBrain(nn.Module):
     def forward(self, obs, *, intervention=None, return_activity=False):
         m, n = self.cell_mask.shape
         gate = self.cell_mask
+        if intervention in DOMAINS:
+            lesion = torch.ones(m, dtype=obs.dtype, device=obs.device)
+            lesion[DOMAINS.index(intervention)::4] = 0
+            gate = gate * lesion[:, None]
         if intervention and intervention.startswith("class:"):
             wanted = intervention.split(":", 1)[1]
-            keep = torch.tensor([node["class"] != wanted for node in self.nodes], dtype=obs.dtype)
+            keep = torch.tensor([(node["class"] or "Unclassified") != wanted for node in self.nodes], dtype=obs.dtype)
             gate = gate * keep[None, :]
         drive = torch.einsum("bf,mf,mfn->bmn", obs, self.sensor_mask, self.input) + self.bias
         h = torch.tanh(drive) * gate
@@ -105,11 +109,6 @@ class HouseBrain(nn.Module):
                 hub = torch.zeros_like(hub)
             incoming = torch.einsum("br,mrn->bmn", hub, self.receive)
             h = torch.tanh(drive + .65 * torch.einsum("bmn,mnk->bmk", h, w) + .35 * incoming) * gate
-            if intervention in DOMAINS:
-                domain = DOMAINS.index(intervention)
-                lesion = torch.ones(m, dtype=obs.dtype, device=obs.device)
-                lesion[domain::4] = 0
-                h = h * lesion[None, :, None]
         read = torch.einsum("bmn,mna->bma", h, self.readout)
         read = read.reshape(len(obs), self.config["copies"], 4, 3).sum(1)
         logits = torch.cat((read[:, 0], read[:, 1], read[:, 2]), dim=1) + self.output_bias

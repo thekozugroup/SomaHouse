@@ -80,6 +80,17 @@ def test_checkpoint_exact_reload_and_lesions(tmp_path):
     assert not torch.equal(b(obs), b(obs, intervention="recurrence"))
 
 
+def test_spoke_lesion_blocks_its_first_message_as_well_as_readout():
+    b = HouseBrain()
+    x = torch.randn(4, 31)
+    y = x.clone(); y[:, 3:6] += 10  # CO2 reaches only the air spoke.
+    ax, activity = b(x, intervention="air", return_activity=True)
+    ay = b(y, intervention="air")
+    torch.testing.assert_close(ax, ay, atol=0, rtol=0)
+    assert activity["spokes"][:, 1].count_nonzero() == 0
+    assert activity["ports"][:, 1].count_nonzero() == 0
+
+
 def test_registered_seed_sets_disjoint():
     assert len(SEEDS) == 3
     assert not (set(VAL) & set(TEST) or set(VAL) & set(STRESS) or set(TEST) & set(STRESS))

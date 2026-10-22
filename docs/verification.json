@@ -1,0 +1,265 @@
+{
+  "passed": true,
+  "checkpoint_files": 48,
+  "model_checks": [
+    {
+      "id": "fly32-s7",
+      "selected_sha256": "8a6b19104e9dcfe73cbf65545cc958f21c6a830635dc0b1d2a36291bf618875b",
+      "initial_sha256": "ce732c5a386e7f51d8c04bb8b752590f4a7c4569bdb0410aa3a9e1ee940980e9",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "fly64-s7",
+      "selected_sha256": "4ff64666951dac28ee4c69b0f70aed446f73be95b953c05b6c7093d48eca545c",
+      "initial_sha256": "e1b50a4dc975b100720b313e29047a1a84da7f6b5b991c9b60856da0205513f5",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 9684
+    },
+    {
+      "id": "rewired32-s7",
+      "selected_sha256": "2d4d66d6641f285a8350868a2c27c088ffc2324f72d32a1db6894f53bfa15a6e",
+      "initial_sha256": "d7af0c8f30b89a6b810e1a47b521ca824b5602a726f337228dea3d0cf4e05ac5",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "dense32-s7",
+      "selected_sha256": "4e392aaf15478d52687e0fe68734cd300f2c20949b9a89600d4f020fe5e4ef92",
+      "initial_sha256": "a30c2e93f03e9f7a207acf996d541a89349f9b8aba0caa4a977064f6202581b0",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 3968
+    },
+    {
+      "id": "nohub32-s7",
+      "selected_sha256": "10288071da7caf36a37e8cbd383fab9453b407061fa05f574f84af4133511502",
+      "initial_sha256": "7a1d678f57ecb0bb08c7b737dc20d8d63ac33a9919570e881f6d6c32fbb56c63",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 1857
+    },
+    {
+      "id": "continue-s7",
+      "selected_sha256": "20e661dbf1286fb42e9eb1c8ee03a7be5cad29222754e85b13d0966b787fb43e",
+      "initial_sha256": "f72c9880779fdaa27e1112c437cf6b0f97a1e111491f65776515854a1a590617",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "cut-s7",
+      "selected_sha256": "73dfd018fbdb6340ca75c8f96e88db5ddaa8cf61c9b629c691fc4358372523c4",
+      "initial_sha256": "cef030810a47bfc8d694622806603c03179c7f78e86658ef097bb7ceadc947b2",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 592
+    },
+    {
+      "id": "duplicate-s7",
+      "selected_sha256": "44bd6c71904fa08a995515353cdfa152150aafa6ca8dc7631cd376d910482885",
+      "initial_sha256": "31ec3b5ed83187e8cf8426a0a2ee72afbe48e9ebab494c1abf03d1251eda9078",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 4952
+    },
+    {
+      "id": "fly32-s19",
+      "selected_sha256": "3460d09031dd57151425368bffd09defafad9ac547a9e327753507685fd4197c",
+      "initial_sha256": "7e8718549647504daef2ecdb0b2156ea4192eb64c15dd607175c7a36b3e42879",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "fly64-s19",
+      "selected_sha256": "451f44b9d91a124a9d42f2ec086280a98fb13345417e52ce1c7c0b72c9fd45f8",
+      "initial_sha256": "039af75c2cfb0a0a96cedb4eb867090c91f8b7624a143aee1cabec79b0d96267",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 9684
+    },
+    {
+      "id": "rewired32-s19",
+      "selected_sha256": "f4960779e94021de45f068ceee68cd6820406fe8f4fd7b1993205a712b40b39a",
+      "initial_sha256": "4393a3f3c185a6ad8663821553e7036b9bbb55696a6307a05e9d9d5a3df99c58",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "dense32-s19",
+      "selected_sha256": "0194a74c8c95317824f67189467c71c71b3da03e73bef4dbe37566008147a99a",
+      "initial_sha256": "2071961c4338225b163cd8c52bcd81361333e35fa6dd84ec8fc5f72e7614f31d",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 3968
+    },
+    {
+      "id": "nohub32-s19",
+      "selected_sha256": "53bdf81951ded1be647970c5cc98bfa86787403ca05ead96c77e5c57d1e073ff",
+      "initial_sha256": "d85c01f743948a839cd2ac7f6d0b6ed256ca5f51abee83d92e997d3c5c66aec8",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 1857
+    },
+    {
+      "id": "continue-s19",
+      "selected_sha256": "26f625324c21e6619fe5f8c7869224408d45e954242721611804e58361560135",
+      "initial_sha256": "975a57f7c4c7f7cdd8b92385100764c3bfb9c93b1789861d855a5885dff7da56",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "cut-s19",
+      "selected_sha256": "13d7edf17477e853b20d88cd3e42e201da80a7f03e05645b3445a4166315363e",
+      "initial_sha256": "b38e10ed99e0fb9a9b273b1dd6610ddb2f3b550a98ba03291f239611c058dc9c",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 508
+    },
+    {
+      "id": "duplicate-s19",
+      "selected_sha256": "fe8ce3e3f6d1bc774d2a71c3355dfdad11e45a0eb25ec6b0a9fc5688d27be610",
+      "initial_sha256": "e01258dfc63bd7850679cb47f4af578ca8a6664af93f84bb4687007a6ec0823c",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 4952
+    },
+    {
+      "id": "fly32-s41",
+      "selected_sha256": "6817f6424eee86bc07607dd095061bd95b3184064a1ce70868698b98ad2a0084",
+      "initial_sha256": "8914e2e02f899521cb099bff8af179c9634c962069f496d9a25ff344c5dcff33",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "fly64-s41",
+      "selected_sha256": "73f7f498919cb52637fbeb250489e36aa31d9d7639dc4fb35c70ccf0426c82cc",
+      "initial_sha256": "c7431b16483e5da8cc69fd53e0ab7d6b61c6b32bcb57f0682cc0bc7948142923",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 9684
+    },
+    {
+      "id": "rewired32-s41",
+      "selected_sha256": "71eee4bf8bdb36a5584b1d158e4769e035f599e87cb831f0730a307197c3235d",
+      "initial_sha256": "22af84c1d245b8269ad5f1df47957b86c16799cfe08f751d02193bfa4d633ee0",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "dense32-s41",
+      "selected_sha256": "5832e3bb1e627c95b4ff713aec9402d259e52b642c46e72d8b8efe39f0edd8c3",
+      "initial_sha256": "f23ad334303928ab43013ddfb7e46181c46bf4bb629d474e6b40fe87c74e1fc7",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 3968
+    },
+    {
+      "id": "nohub32-s41",
+      "selected_sha256": "ddead66bdf32c73df52f48312626517e6e4fb2699c224cc591226ef1646c8962",
+      "initial_sha256": "59bcca49c9381bdcf62a3f5c0ce98b61a7919621b5830a6e591246174520e50f",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 1857
+    },
+    {
+      "id": "continue-s41",
+      "selected_sha256": "aa5327f6948695f9dd3748391a359e4b36b9cd143d62a81fb797c42beb3a8ad5",
+      "initial_sha256": "6666db04a56951e520c6c1ef1d66c1b28e05e4eeb14154ba60753aca591c8dbc",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 2476
+    },
+    {
+      "id": "cut-s41",
+      "selected_sha256": "af8a2d811465e0fa0faaa67c60b17a57715bb43489ac05b88bd00cc46742c77b",
+      "initial_sha256": "b9ba7406ecbedc93950ad76dba87df51057f62e57ddcc1a31420d3b2daa068fc",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 584
+    },
+    {
+      "id": "duplicate-s41",
+      "selected_sha256": "695c75ba8175c99f7c727605ee6acdeb28494f24daa22c73f146142b854d5ce2",
+      "initial_sha256": "99e9a4e288a9e54c6f02f0dbaeaca3b325d63bcd2233fb2977a6c3b6947bfc88",
+      "exact_action_reload": true,
+      "changed_active_recurrent_weights": 4952
+    }
+  ],
+  "primary_test_replay": [
+    {
+      "seed": 7,
+      "episodes": 60,
+      "max_metric_error": 0.0,
+      "mode": "strict_1e-7"
+    },
+    {
+      "seed": 19,
+      "episodes": 60,
+      "max_metric_error": 0.0,
+      "mode": "strict_1e-7"
+    },
+    {
+      "seed": 41,
+      "episodes": 60,
+      "max_metric_error": 0.0,
+      "mode": "strict_1e-7"
+    }
+  ],
+  "independent_numpy_physics": [
+    {
+      "controller": "balance",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 7.831782998124481e-06,
+        "co2": 0.00019986163454177586,
+        "lux": 2.4080276489257812e-05,
+        "power_kw": 9.05990600319484e-08
+      },
+      "independent_totals": {
+        "energy_kwh": 18.45114992857064,
+        "thermal_degree_hours": 0.10757435879219557,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.6454503768020204e-05
+      }
+    },
+    {
+      "controller": "duplicate",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 1.0668619253806355e-05,
+        "co2": 0.00011554584079931374,
+        "lux": 2.9206275939941406e-05,
+        "power_kw": 1.122093271632707e-07
+      },
+      "independent_totals": {
+        "energy_kwh": 22.9130727635124,
+        "thermal_degree_hours": 0.10570519085746453,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 0.0
+      }
+    },
+    {
+      "controller": "feedback",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 7.219983917394757e-06,
+        "co2": 0.00019394320327137393,
+        "lux": 2.4080276489257812e-05,
+        "power_kw": 1.0821444074160524e-07
+      },
+      "independent_totals": {
+        "energy_kwh": 15.975941082570975,
+        "thermal_degree_hours": 0.12248472512137021,
+        "co2_ppm_hours": 0.0,
+        "light_lux_hours": 1.6454503768020204e-05
+      }
+    },
+    {
+      "controller": "off",
+      "steps": 288,
+      "max_absolute_errors": {
+        "temperature": 8.748834726901578e-06,
+        "co2": 0.0008038691671572451,
+        "lux": 0.0,
+        "power_kw": 0.0
+      },
+      "independent_totals": {
+        "energy_kwh": 0.0,
+        "thermal_degree_hours": 27.093374786434325,
+        "co2_ppm_hours": 16654.179704485512,
+        "light_lux_hours": 3402.467612584428
+      }
+    }
+  ],
+  "source_seed_sha256": "68b42e0497e3679116d7f4348c0e3656fa560f87273c96b7b3797cf97115f0ab",
+  "selection_sha256": "fbba82261ea3f64ba584666f9f23f274d97acb2157a640c16f51fd25b65a0325",
+  "protocol_sha256": "db7e0ed00b1fce07f730d4eb140e857f7e6c109fc49c459436c4ac6a3970a2e1",
+  "test_rows": 3720,
+  "weights_only_loader": true
+}

@@ -223,7 +223,7 @@ def evaluate_study():
     interventions = []
     for seed in SEEDS:
         brain = HouseBrain.load(CHECKPOINTS / f"{primary}-s{seed}.pt")
-        for lesion in (None, "hub", "thermal", "air", "light", "context", "recurrence") + tuple(f"class:{c}" for c in sorted({n["class"] for n in brain.nodes})):
+        for lesion in (None, "hub", "thermal", "air", "light", "context", "recurrence") + tuple(f"class:{c}" for c in sorted({n["class"] or "Unclassified" for n in brain.nodes})):
             metrics, _ = rollout(brain, scenarios(VAL, 144), intervention=lesion)
             interventions.append({"seed": seed, "lesion": lesion or "intact", **{k: float(v.mean()) for k, v in metrics.items()}})
     # Save deterministic traces for the representative median-validation training seed.
