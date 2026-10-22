@@ -162,7 +162,7 @@ def report():
         seed_table += f"| {r['family']} | {r['seed']} | {r['selected_update']} | {r['validation_cost']:.5f} | {avg:.5f} |\n"
         seed_rows.append({"family":r["family"],"seed":r["seed"],"selected_update":r["selected_update"],"validation_cost":r["validation_cost"],"test_cost":float(avg)})
     with (REPORTS / "seed-results.csv").open("w",newline="") as f:
-        writer=csv.DictWriter(f,fieldnames=list(seed_rows[0]));writer.writeheader();writer.writerows(seed_rows)
+        writer=csv.DictWriter(f,fieldnames=list(seed_rows[0]),lineterminator="\n");writer.writeheader();writer.writerows(seed_rows)
     anatomy = "| Source class lesion | Intact mean validation cost | Lesioned mean cost | Interpretation |\n|---|---:|---:|---|\n"
     intact = np.mean([r["cost"] for r in result["interventions"] if r["lesion"] == "intact"])
     for lesion in sorted({r["lesion"] for r in result["interventions"] if r["lesion"].startswith("class:")}):

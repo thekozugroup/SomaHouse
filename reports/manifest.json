@@ -212,8 +212,8 @@
     "bytes": 62049
   },
   "reports/episodes.csv": {
-    "sha256": "70afe45859dcf065a79e2c91486b2ffb09230f6a5947b39e75dff9c80f92500b",
-    "bytes": 1025408
+    "sha256": "1eaf174ca0ed10cd9eb8859cb75d313b1603d2e225e7c9f26acbf4e1f36630c9",
+    "bytes": 1021687
   },
   "reports/interventions.png": {
     "sha256": "56bc2098a7a95449a2f35d2eab648ddac011868fd348216826fa492d41883873",
@@ -240,16 +240,16 @@
     "bytes": 83855
   },
   "reports/seed-results.csv": {
-    "sha256": "049f99a9aad15940f1c2e32a9302080bc6710b385c546ad08ecb505f0e53400d",
-    "bytes": 1371
+    "sha256": "4d40774b7dce7f662f3d7fe8acf765f478be6d6a5ee29008fba60e125c1156ae",
+    "bytes": 1346
   },
   "reports/selection.json": {
     "sha256": "fbba82261ea3f64ba584666f9f23f274d97acb2157a640c16f51fd25b65a0325",
     "bytes": 132216
   },
   "reports/study-bundle.zip": {
-    "sha256": "bb8f9718039204fcf595f78acf192e87a6053a87be79c86618e389fa07c1c828",
-    "bytes": 3615096
+    "sha256": "2df4945af53195d4c6064bd0cf7d1a1777ffa41c26d104931212d1a0ba4d7ce6",
+    "bytes": 3614871
   },
   "reports/trace-balance.json": {
     "sha256": "d9335c3e5a19b7c1a24b12786d477352a9311a31eec9c789fea6b9b506ecffc2",
@@ -380,8 +380,8 @@
     "bytes": 62049
   },
   "docs/episodes.csv": {
-    "sha256": "70afe45859dcf065a79e2c91486b2ffb09230f6a5947b39e75dff9c80f92500b",
-    "bytes": 1025408
+    "sha256": "1eaf174ca0ed10cd9eb8859cb75d313b1603d2e225e7c9f26acbf4e1f36630c9",
+    "bytes": 1021687
   },
   "docs/fonts/body.ttf": {
     "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
@@ -436,16 +436,16 @@
     "bytes": 83855
   },
   "docs/seed-results.csv": {
-    "sha256": "049f99a9aad15940f1c2e32a9302080bc6710b385c546ad08ecb505f0e53400d",
-    "bytes": 1371
+    "sha256": "4d40774b7dce7f662f3d7fe8acf765f478be6d6a5ee29008fba60e125c1156ae",
+    "bytes": 1346
   },
   "docs/selection.json": {
     "sha256": "fbba82261ea3f64ba584666f9f23f274d97acb2157a640c16f51fd25b65a0325",
     "bytes": 132216
   },
   "docs/study-bundle.zip": {
-    "sha256": "bb8f9718039204fcf595f78acf192e87a6053a87be79c86618e389fa07c1c828",
-    "bytes": 3615096
+    "sha256": "2df4945af53195d4c6064bd0cf7d1a1777ffa41c26d104931212d1a0ba4d7ce6",
+    "bytes": 3614871
   },
   "docs/style.css": {
     "sha256": "b371af89f97858b579dd59f33e3a9388a8b3d4b5f4469c7388e5a5b774b5eaca",

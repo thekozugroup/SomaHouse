@@ -207,7 +207,7 @@ def evaluate_study():
                         "p95_ms": float(np.quantile(samples, .95)), "batch": 1, "samples": 200})
         print(f"evaluated {name} seed={seed}", flush=True)
     with (REPORTS / "episodes.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader(); writer.writerows(rows)
     summaries = []
     for name in sorted({r["controller"] for r in rows}):
